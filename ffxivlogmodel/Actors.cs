@@ -5,11 +5,11 @@ namespace Offmodel.FFXIV.Log.Model
 {
     public class Actors
     {
-        private readonly Dictionary<Int32, Actor> actors;
+        private readonly Dictionary<uint, Actor> actors;
 
         public Actors()
         {
-            actors = new Dictionary<Int32, Actor>();
+            actors = new Dictionary<uint, Actor>();
         }
 
         public void AddActor(Actor actor)
@@ -22,12 +22,12 @@ namespace Offmodel.FFXIV.Log.Model
             RemoveActor(actor.Id);
         }
 
-        public void RemoveActor(int id)
+        public void RemoveActor(uint id)
         {
             actors.Remove(id);
         }
 
-        public Actor GetActor(int id)
+        public Actor GetActor(uint id)
         {
             return actors[id];
         }

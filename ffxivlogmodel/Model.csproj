@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Offmodel.FFXIV.Log.Model</RootNamespace>
   </PropertyGroup>
 
 </Project>

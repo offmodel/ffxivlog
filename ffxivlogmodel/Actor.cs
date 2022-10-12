@@ -50,12 +50,13 @@ namespace Offmodel.FFXIV.Log.Model
             Sage = 40
         };
 
-        public int Id { get; private set; }
+        public uint Id { get; private set; }
+
         public string Name { get; private set; }
 
         public ActorJob Job { get; private set; }
 
-        public int Level { get; private set; }
+        public uint Level { get; private set; }
 
         public Position Position { get; private set; }
 
@@ -63,13 +64,18 @@ namespace Offmodel.FFXIV.Log.Model
 
         public string World { get; private set; }
 
-        public int NPCNameId { get; private set; }
-        public int NPCBaseId { get; private set; }
+        public uint NPCNameId { get; private set; }
 
-        public int HP { get; private set; }
-        public int HPMax { get; private set; }
-        public int MP { get; private set; }
-        public int MPMax { get; private set; }
+        public uint NPCBaseId { get; private set; }
+
+        public uint HP { get; private set; }
+
+        public uint HPMax { get; private set; }
+
+        public uint MP { get; private set; }
+
+        public uint MPMax { get; private set; }
+
 
         public Actor(LogLine line)
         {
@@ -78,7 +84,7 @@ namespace Offmodel.FFXIV.Log.Model
         /** message type 2 **/
         private void UpdateFromChangePlayer(State state, LogLine line)
         {
-            Id = Int32.Parse(line.Text(2), NumberStyles.HexNumber);
+            Id = uint.Parse(line.Text(2), NumberStyles.HexNumber);
             Name = line.Text(3);
             state.PlayerId = Id;
         }
@@ -86,12 +92,12 @@ namespace Offmodel.FFXIV.Log.Model
         /** message type 3 **/
         private void UpdateFromUpdateCombatant(State state, LogLine line)
         {
-            Id = Int32.Parse(line.Text(2), NumberStyles.HexNumber);
+            Id = uint.Parse(line.Text(2), NumberStyles.HexNumber);
             Name = line.Text(3);
-            Job = (ActorJob)Int32.Parse(line.Text(4), NumberStyles.HexNumber);
-            Level = Int32.Parse(line.Text(5), NumberStyles.HexNumber);
+            Job = (ActorJob)uint.Parse(line.Text(4), NumberStyles.HexNumber);
+            Level = uint.Parse(line.Text(5), NumberStyles.HexNumber);
 
-            int ownerId = Int32.Parse(line.Text(6), NumberStyles.HexNumber);
+            uint ownerId = uint.Parse(line.Text(6), NumberStyles.HexNumber);
             if (ownerId != 0)
             {
                 Owner = state.Actors.GetActor(ownerId);
@@ -104,12 +110,12 @@ namespace Offmodel.FFXIV.Log.Model
             // ignoring world id
             World = line.Text(8);
 
-            NPCNameId = Int32.Parse(line.Text(9));
-            NPCBaseId = Int32.Parse(line.Text(10));
-            HP = Int32.Parse(line.Text(11));
-            HPMax = Int32.Parse(line.Text(12));
-            MP = Int32.Parse(line.Text(13));
-            MPMax = Int32.Parse(line.Text(14));
+            NPCNameId = uint.Parse(line.Text(9));
+            NPCBaseId = uint.Parse(line.Text(10));
+            HP = uint.Parse(line.Text(11));
+            HPMax = uint.Parse(line.Text(12));
+            MP = uint.Parse(line.Text(13));
+            MPMax = uint.Parse(line.Text(14));
 
             // TP/TPMax?
 

@@ -3,9 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tool", "ffxivlogui\Tool.csproj", "{A53ABA4D-E365-4478-8100-C6B8EA32EBD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tool", "ffxivlogui\Tool.csproj", "{A53ABA4D-E365-4478-8100-C6B8EA32EBD1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{14DDA574-B0A9-4975-B749-512D8F6B4476} = {14DDA574-B0A9-4975-B749-512D8F6B4476}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "ffxivlogmodel\Model.csproj", "{14DDA574-B0A9-4975-B749-512D8F6B4476}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "ffxivlogmodel\Model.csproj", "{14DDA574-B0A9-4975-B749-512D8F6B4476}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

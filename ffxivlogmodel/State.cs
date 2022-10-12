@@ -4,7 +4,7 @@
     {
         public Actors Actors { get; } = new Actors();
 
-        public int PlayerId { get; set; }
+        public uint PlayerId { get; set; }
 
         public State()
         {
