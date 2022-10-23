@@ -18,7 +18,7 @@ namespace Offmodel.FFXIV.Log.Model
      * nothing more than an animation effect. There's no id shared between the cast events and each other or this
      * event; matching has to be done based on the actor and ability ids.
      */
-    class Action
+    class Action: LogEvent
     {
         enum AbilityFlags: uint
         {
@@ -82,9 +82,9 @@ namespace Offmodel.FFXIV.Log.Model
          * Known class supplementary statuses for 0x0E:
          *  0: tech finish esprit (738), standard finish esprit (737), infuriate (769), swiftcast (A7), 
          *      sharpcast (363), standard step (71A), tech step (71B), superbolide (72C), recitation (768),
-         *      emergency tactics (318)
+         *      emergency tactics (318), dance partner (720)
           *  1: GCD shield, (129 = galvanize, 77E = catalyze)
-         *  5: brotherhood (4A1), tech finish (71E), standard finish/tiliana (71D)
+         *  5: brotherhood (4A1), tech finish (71E), standard finish/tiliana (71D self, 839 other)
          *  A: trick attack (CB6)
          * 85: divine benison (4C2)
          * D5: seraphic veil (77D)
@@ -106,13 +106,15 @@ namespace Offmodel.FFXIV.Log.Model
          * 580000: int pot (31)
          * 590000: mind pot (31)
          * 1E0000: Expedient (A98) sprint effect
+         * 4B0000-540000?: Food (30)
          */
 
         /**
-         * Known statuses for 0x0F:
-         *  A58000: F3 Proc
-         * 3638000: Sharpcast
-         * 1998000: Holmgang (on target)
+         * Known statuses for 0x0F (always xxxx8000):
+         *  A5: F3 Proc
+         * 363: Sharpcast
+         * 199: Holmgang (on target)
+         * 71F: Closed Position (4900 supplementary)
          */
 
         /**
@@ -122,20 +124,20 @@ namespace Offmodel.FFXIV.Log.Model
          * target id: E0000000 is an AOE miss
          */
 
-        public Actor Initiator { get; private set; }
+        public Actor Initiator { get; }
 
-        uint AbilityId;
-        string AbilityName;
+        public uint AbilityId { get; }
+        public string AbilityName { get; } 
 
-        Actor Target;
+        public Actor Target { get; }
 
-        List<Effect> Effects = new List<Effect>();
+        public List<Effect> Effects { get; }  = new List<Effect>();
 
-        uint ActionId; // correlate with other lines
-        uint HitIndex;
-        uint HitTotal;
+        public uint ActionId { get; } // correlate with other lines
+        public uint HitIndex { get; }
+        public uint HitTotal { get; }
 
-        class Effect
+        public class Effect
         {
             public uint Desc { get; }
             public uint Data { get; }
@@ -257,7 +259,7 @@ namespace Offmodel.FFXIV.Log.Model
             }
         }
 
-        public void ReadAction(LogLine source, State state)
+        public Action(LogLine source, State state): base(source)
         {
             Initiator = state.Actors.GetActor(uint.Parse(source.Text(2), NumberStyles.HexNumber));
             // initiator name ignored

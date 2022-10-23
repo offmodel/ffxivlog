@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace Offmodel.FFXIV.Log.Model
 {
-    public class Actor
+    public class Actor: LogEvent
     {
         public enum ActorJob
         {
@@ -50,76 +50,76 @@ namespace Offmodel.FFXIV.Log.Model
             Sage = 40
         };
 
-        public uint Id { get; private set; }
+        public uint Id { get; }
 
-        public string Name { get; private set; }
+        public string Name { get; }
 
-        public ActorJob Job { get; private set; }
+        public ActorJob Job { get; }
 
-        public uint Level { get; private set; }
+        public uint Level { get; }
 
-        public Position Position { get; private set; }
+        public Position Position { get; }
 
-        public Actor Owner { get; private set; }
+        public Actor Owner { get; }
 
-        public string World { get; private set; }
+        public string World { get; }
 
-        public uint NPCNameId { get; private set; }
+        public uint NPCNameId { get; }
 
-        public uint NPCBaseId { get; private set; }
+        public uint NPCBaseId { get; }
 
-        public uint HP { get; private set; }
+        public uint HP { get; }
 
-        public uint HPMax { get; private set; }
+        public uint HPMax { get; }
 
-        public uint MP { get; private set; }
+        public uint MP { get; }
 
-        public uint MPMax { get; private set; }
+        public uint MPMax { get; }
 
-
-        public Actor(LogLine line)
-        {
-        }
-
-        /** message type 2 **/
-        private void UpdateFromChangePlayer(State state, LogLine line)
+        public Actor(LogLine line, State state): base(line)
         {
             Id = uint.Parse(line.Text(2), NumberStyles.HexNumber);
             Name = line.Text(3);
-            state.PlayerId = Id;
-        }
 
-        /** message type 3 **/
-        private void UpdateFromUpdateCombatant(State state, LogLine line)
-        {
-            Id = uint.Parse(line.Text(2), NumberStyles.HexNumber);
-            Name = line.Text(3);
-            Job = (ActorJob)uint.Parse(line.Text(4), NumberStyles.HexNumber);
-            Level = uint.Parse(line.Text(5), NumberStyles.HexNumber);
-
-            uint ownerId = uint.Parse(line.Text(6), NumberStyles.HexNumber);
-            if (ownerId != 0)
+            switch (EventId)
             {
-                Owner = state.Actors.GetActor(ownerId);
+                case 2:
+                    Id = uint.Parse(line.Text(2), NumberStyles.HexNumber);
+                    Name = line.Text(3);
+                    state.PlayerId = Id;
+                    break;
+
+                case 3:
+                    Id = uint.Parse(line.Text(2), NumberStyles.HexNumber);
+                    Name = line.Text(3);
+                    Job = (ActorJob)uint.Parse(line.Text(4), NumberStyles.HexNumber);
+                    Level = uint.Parse(line.Text(5), NumberStyles.HexNumber);
+
+                    uint ownerId = uint.Parse(line.Text(6), NumberStyles.HexNumber);
+                    if (ownerId != 0)
+                    {
+                        Owner = state.Actors.GetActor(ownerId);
+                    }
+                    else
+                    {
+                        Owner = null;
+                    }
+
+                    // ignoring world id
+                    World = line.Text(8);
+
+                    NPCNameId = uint.Parse(line.Text(9));
+                    NPCBaseId = uint.Parse(line.Text(10));
+                    HP = uint.Parse(line.Text(11));
+                    HPMax = uint.Parse(line.Text(12));
+                    MP = uint.Parse(line.Text(13));
+                    MPMax = uint.Parse(line.Text(14));
+
+                    // TP/TPMax?
+
+                    Position = new Position(line, 17);
+                    break;
             }
-            else
-            {
-                Owner = null;
-            }
-
-            // ignoring world id
-            World = line.Text(8);
-
-            NPCNameId = uint.Parse(line.Text(9));
-            NPCBaseId = uint.Parse(line.Text(10));
-            HP = uint.Parse(line.Text(11));
-            HPMax = uint.Parse(line.Text(12));
-            MP = uint.Parse(line.Text(13));
-            MPMax = uint.Parse(line.Text(14));
-
-            // TP/TPMax?
-
-            Position = new Position(line, 17);
         }
-    }
+   }
 }
