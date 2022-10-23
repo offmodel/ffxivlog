@@ -120,6 +120,8 @@ namespace Offmodel.FFXIV.Log.Model
                     Position = new Position(line, 17);
                     break;
             }
+
+            state.Actors.AddActor(this);
         }
-   }
+    }
 }

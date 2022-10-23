@@ -11,14 +11,25 @@ namespace Offmodel.FFXIV.Log.Model
     public class Parser
     {
         protected TextReader reader;
-        protected State state;
+        protected State state = new();
 
-        public IEnumerable<LogEvent> Events { get; };
+        public IEnumerable<LogEvent> Events { get; }
 
         protected LogEvent LineToEvent(LogLine logLine)
         {
             switch (uint.Parse(logLine.Text(0)))
             {
+                case 2:
+                case 3:
+                    return new Actor(logLine, state);
+
+                case 21:
+                case 22:
+                    return new Action(logLine, state);
+
+                case 37:
+                    return new ActionSync(logLine, state);
+
                 default:
                     return new LogEvent(logLine);
             }
@@ -27,7 +38,6 @@ namespace Offmodel.FFXIV.Log.Model
         public Parser(TextReader reader)
         {
             this.reader = reader;
-            this.state = new State();
 
             List<LogEvent> events = new List<LogEvent>();
             for (String line = reader.ReadLine(); line != null; line = reader.ReadLine()) {

@@ -1,54 +1,24 @@
 ﻿using Microsoft.Win32;
+using Offmodel.FFXIV.Log.Model;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
 using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Markup;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using Action = Offmodel.FFXIV.Log.Model.Action;
 
 namespace viewer
 {
-    public class Track
-    {
-        private String _t;
-        private String _a;
-        private int _n;
-
-        public String title
-        {
-            get { return _t; }
-            set { _t = value; }
-        }
-        public String artist
-        {
-            get { return _a; }
-            set { _a = value; }
-        }
-        public int number
-        {
-            get { return _n; }
-            set { _n = value; }
-        }
-    }
-
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
         private string? Path;
-        private ObservableCollection<Track>? Data;
+        private ObservableCollection<LogEvent> Data = new();
+        private Func<LogEvent, bool> Filter = e => true;
 
         public MainWindow()
         {
@@ -62,17 +32,76 @@ namespace viewer
             {
                 Path = file.FileName;
                 Data = Reload();
-                DataGrid.ItemsSource = Data;
+                DataGrid.ItemsSource = Data.Where(Filter);
             }
         }
 
-        private ObservableCollection<Track> Reload()
+        private ObservableCollection<LogEvent> Reload()
         {
-            ObservableCollection<Track> data = new() { };
-            data.Add(new Track() { title = "Think", artist = "Aretha Franklin", number = 7 });
-            data.Add(new Track() { title = "Minnie The Moocher", artist = "Cab Calloway", number = 9 });
-            data.Add(new Track() { title = "Shake A Tail Feather", artist = "Ray Charles", number = 4 });
-            return data;
+            Parser parser = new(new StreamReader(File.OpenRead(Path)));
+            return new ObservableCollection<LogEvent>(parser.Events.Where(Filter));
+        }
+
+        private void AllEvents()
+        {
+            Filter = e => true;
+
+            DataGrid.Columns.Clear();
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "EventType", Binding = new Binding("EventId") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Time", Binding = new Binding("EventTime") });
+            DataGrid.ItemsSource = Data.Where(Filter);
+        }
+
+        private void Actors()
+        {
+            Filter = e => e is Actor;
+
+            DataGrid.Columns.Clear();
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "EventType", Binding = new Binding("EventId") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Time", Binding = new Binding("EventTime") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Id", Binding = new Binding("Id") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Name", Binding = new Binding("Name") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Job", Binding = new Binding("Job") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Owner", Binding = new Binding("Owner.Name") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "World", Binding = new Binding("World") });
+            DataGrid.ItemsSource = Data.Where(Filter);
+        }
+
+        private void Actions()
+        {
+            Filter = e => e is Action;
+
+            DataGrid.Columns.Clear();
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "EventType", Binding = new Binding("EventId") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Time", Binding = new Binding("EventTime") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Initiator", Binding = new Binding("Initiator.Name") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "AbilityName", Binding = new Binding("AbilityName") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Target", Binding = new Binding("Target.Name") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "ActionId", Binding = new Binding("ActionId") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "HitIndex", Binding = new Binding("HitIndex") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "HitTotal", Binding = new Binding("HitTotal") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "IsDamage", Binding = new Binding("Effects[0].IsDamage") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Damage", Binding = new Binding("Effects[0].Damage") });
+            DataGrid.ItemsSource = Data.Where(Filter);
+        }
+
+        private void EventType_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            object tag = ((ComboBoxItem) EventType.SelectedItem).Tag;
+            switch (uint.Parse((string) tag))
+            {
+                case 1:
+                    AllEvents();
+                    break;
+
+                case 2:
+                    Actors();
+                    break;
+
+                case 3:
+                    Actions();
+                    break;
+            }
         }
     }
 }

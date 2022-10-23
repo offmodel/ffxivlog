@@ -18,7 +18,7 @@ namespace Offmodel.FFXIV.Log.Model
      * nothing more than an animation effect. There's no id shared between the cast events and each other or this
      * event; matching has to be done based on the actor and ability ids.
      */
-    class Action: LogEvent
+    public class Action: LogEvent
     {
         enum AbilityFlags: uint
         {

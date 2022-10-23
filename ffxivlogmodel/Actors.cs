@@ -14,7 +14,7 @@ namespace Offmodel.FFXIV.Log.Model
 
         public void AddActor(Actor actor)
         {
-            actors.Add(actor.Id, actor);
+            actors[actor.Id] = actor;
         }
 
         public void RemoveActor(Actor actor)
@@ -27,9 +27,9 @@ namespace Offmodel.FFXIV.Log.Model
             actors.Remove(id);
         }
 
-        public Actor GetActor(uint id)
+        public Actor? GetActor(uint id)
         {
-            return actors[id];
+            return actors.ContainsKey(id) ? actors[id] : null;
         }
     }
 }

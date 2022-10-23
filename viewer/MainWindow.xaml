@@ -11,10 +11,14 @@
         <DataGrid Name="DataGrid" Margin="0,51,0,0" CanUserReorderColumns="True" CanUserResizeColumns="True" CanUserResizeRows="False" CanUserSortColumns="True" IsReadOnly="True"
                   AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Track Title" Binding="{Binding title}" />
-                <DataGridTextColumn Header="Artist" Binding="{Binding artist}" />
-                <DataGridTextColumn Header="Track Number" Binding="{Binding number}" />
+                <DataGridTextColumn Header="EventType" Binding="{Binding EventId}" />
+                <DataGridTextColumn Header="Time" Binding="{Binding EventTime}" />
             </DataGrid.Columns>
         </DataGrid>
+        <ComboBox Name="EventType" HorizontalAlignment="Left" Height="22" Margin="254,14,0,0" VerticalAlignment="Top" Width="119" SelectionChanged="EventType_SelectionChanged">
+            <ComboBoxItem Content="All Events" Tag="1" />
+            <ComboBoxItem Content="Actors" Tag="2"/>
+            <ComboBoxItem Content="Actions" Tag="3"/>
+        </ComboBox>
     </Grid>
 </Window>
