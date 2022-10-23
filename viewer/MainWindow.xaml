@@ -8,17 +8,30 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button Content="Select File..." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="31" Width="117" Click="Button_Click"/>
-        <DataGrid Name="DataGrid" Margin="0,51,0,0" CanUserReorderColumns="True" CanUserResizeColumns="True" CanUserResizeRows="False" CanUserSortColumns="True" IsReadOnly="True"
-                  AutoGenerateColumns="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="EventType" Binding="{Binding EventId}" />
-                <DataGridTextColumn Header="Time" Binding="{Binding EventTime}" />
-            </DataGrid.Columns>
-        </DataGrid>
         <ComboBox Name="EventType" HorizontalAlignment="Left" Height="22" Margin="254,14,0,0" VerticalAlignment="Top" Width="119" SelectionChanged="EventType_SelectionChanged">
             <ComboBoxItem Content="All Events" Tag="1" />
             <ComboBoxItem Content="Actors" Tag="2"/>
             <ComboBoxItem Content="Actions" Tag="3"/>
         </ComboBox>
+        <Grid Margin="0,51,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"  />
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <DataGrid Name="DataGrid" CanUserReorderColumns="True" CanUserResizeColumns="True" CanUserResizeRows="False" CanUserSortColumns="True" IsReadOnly="True"
+                  AutoGenerateColumns="False" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SelectionChanged="DataGrid_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="EventType" Binding="{Binding EventId}" />
+                    <DataGridTextColumn Header="Time" Binding="{Binding EventTime}" />
+                </DataGrid.Columns>
+            </DataGrid>
+            <GridSplitter HorizontalAlignment="Stretch" Width="5" Grid.Column="1"/>
+            <DataGrid Name="DetailGrid" Grid.Column="2" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" CanUserReorderColumns="True" CanUserResizeColumns="True" CanUserResizeRows="False" CanUserSortColumns="True" IsReadOnly="True"
+                  AutoGenerateColumns="False"/>
+        </Grid>
     </Grid>
 </Window>

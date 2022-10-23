@@ -78,6 +78,25 @@ namespace Offmodel.FFXIV.Log.Model
          * 34: Warrior Beast
          */
 
+        enum Gauge: uint
+        {
+            BlackMageIncrement = 0x2D,
+            BlackMageSwitch = 0x35,
+            BlackMageSet = 0x43,
+            BlackMageXenoglossy = 0x10C,
+            DancerFeather = 0xEB,
+            DancerEsprit = 0xEC,
+            ScholarFairy = 0xC3,
+            GunbreakerCart = 0xED,
+            WhiteMageBloodLily = 0xEE,
+            NinjaNinkiBunshin = 0x9D,
+            NinjaNinki = 0x9F,
+            NinjaHutonSet = 0xC9,
+            NinjaHutonIncrement = 0xD4,
+            WarriorBeast = 0x34,
+            EnmityShirk = 0xBF,
+        }
+
         /**
          * Known class supplementary statuses for 0x0E:
          *  0: tech finish esprit (738), standard finish esprit (737), infuriate (769), swiftcast (A7), 
@@ -107,15 +126,112 @@ namespace Offmodel.FFXIV.Log.Model
          * 590000: mind pot (31)
          * 1E0000: Expedient (A98) sprint effect
          * 4B0000-540000?: Food (30)
-         */
-
-        /**
+         *
          * Known statuses for 0x0F (always xxxx8000):
          *  A5: F3 Proc
          * 363: Sharpcast
          * 199: Holmgang (on target)
          * 71F: Closed Position (4900 supplementary)
          */
+
+        enum BuffDebuff : uint
+        {
+            Food = 0x30,
+            Potion = 0x31,
+            Sprint = 0x32,
+            Vengeance1 = 0x59,
+            Defiance = 0x5B,
+            PerfectBalance = 0x6E,
+            LifeSurge = 0x74,
+            Resurrection = 0x94,
+            Regen = 0x9E,
+            Fire3Proc = 0xA5,
+            Swiftcast = 0xA7,
+            Amplifier = 0x10C,
+            Galvanize = 0x129,
+            WhiserpingDawn = 0x13B,
+            FeyIllumination = 0x13D,
+            HolmgangTarget = 0x199,
+            Mudra = 0x1F0,
+            Kassatsu = 0x1F1,
+            Hide = 0x266,
+            Mug = 0x27E,
+            LeyLines = 0x2E1,
+            BattleLitany = 0x312,
+            Dissipation = 0x317,
+            EmergencyTactics = 0x318,
+            Sharpcast = 0x363,
+            Vengeance2 = 0x390,
+            MeditativeBrotherhood = 0x49E,
+            Brotherhood = 0x4A1,
+            TenChiJin = 0x4A2,
+            Rampart = 0x4A7,
+            Reprisal = 0x4A9,
+            Feint = 0x4AB,
+            Peloton = 0x4AF,
+            Addle = 0x4B3,
+            LucidDremaing = 0x4B4,
+            ArmsLength = 0x4B9,
+            Triplecast = 0x4BB,
+            ThinAir = 0x4C1,
+            DivineBenison = 0x4C2,
+            PlenaryIndulgence = 0x4C3,
+            ChainStrategem = 0x4C5,
+            TrueNorth = 0x4E2,
+            LeftEye = 0x5AE,
+            ShakeItOff = 0x5B1,
+            StandardStep = 0x71A,
+            TechnicalStep = 0x71B,
+            ThreefoldFanDance = 0x71C,
+            StandardFinishSelf = 0x71D,
+            TechnicalFinish = 0x71E,
+            ClosedPosition = 0x71F,
+            DancePartner = 0x720,
+            Devilment = 0x721,
+            ShieldSamba = 0x722,
+            Improvisation = 0x723,
+            NoMercy = 0x727,
+            Camouflage = 0x728,
+            RoyalGuard = 0x729,
+            Nebula = 0x72A,
+            Aurora = 0x72B,
+            Superbolide = 0x72C,
+            HeartOfLight = 0x72F,
+            StandardFinishEsprit = 0x737,
+            TechFinishEsprit = 0x738,
+            LanceCharge = 0x748,
+            Dia = 0x74F,
+            Temperance = 0x750,
+            AngelWhisper = 0x752,
+            SerpahicIllumination = 0x753,
+            Biolysis = 0x767,
+            Recitation = 0x768,
+            NascentChaos = 0x769,
+            Asylum = 0x777,
+            SerpahicVeil = 0x77D,
+            Catalyze = 0x77E,
+            SacredSoil = 0x798,
+            BunshinClone = 0x7A2,
+            StandardFinishPartner = 0x839,
+            SurgingTempest = 0xA75,
+            Bloodwhetting = 0xA76,
+            HeartOfCorundum = 0xA78,
+            TechnicalFinishSelf = 0xA8A,
+            FourfoldFanDance = 0xA8B,
+            Aquaveil = 0xA94,
+            Protraction = 0xA96,
+            Expedient = 0xA97,
+            ExpedientSprint = 0xA98,
+            Stormbite = 0x4B1,
+            SilkenSymmetry = 0xA85,
+            SilkenFlow = 0xA86,
+            ImprovisedFinish = 0xA89,
+            FlourishingStarfall = 0xA8C,
+            PhantomKamaitachiReady = 0xAA3,
+            FlourishingSymmetry = 0xBC9,
+            FlourishingFlow = 0xBCA,
+            TrickAttack = 0xCB6
+        }
 
         /**
          * F1730006: parried rearing rampage
@@ -133,6 +249,8 @@ namespace Offmodel.FFXIV.Log.Model
 
         public List<Effect> Effects { get; }  = new List<Effect>();
 
+        public Effect FirstEffect { get { return (Effects.Count > 0) ? Effects[0] : new Effect(0, 0); } }
+
         public uint ActionId { get; } // correlate with other lines
         public uint HitIndex { get; }
         public uint HitTotal { get; }
@@ -149,6 +267,60 @@ namespace Offmodel.FFXIV.Log.Model
             }
 
             public uint Type { get { return Desc & 0xFF; } }
+
+            public string TypeName 
+            { 
+                get 
+                { 
+                    if (Enum.IsDefined(typeof(AbilityFlags), Type)) 
+                        return ((AbilityFlags)Type).ToString(); 
+                    else 
+                        return Type.ToString();
+                } 
+            }
+
+            public string EffectValue
+            {
+                get
+                {
+                    return Type switch
+                    {
+                        (uint)AbilityFlags.Damage => Damage.ToString(),
+                        (uint)AbilityFlags.BlockedDamage => Damage.ToString(),
+                        (uint)AbilityFlags.ParriedDamage => Damage.ToString(),
+                        (uint)AbilityFlags.Heal => Damage.ToString(),
+                        (uint)AbilityFlags.ManaRestore => Damage.ToString(),
+                        (uint)AbilityFlags.TargetStatusGrant => BuffName.ToString(),
+                        (uint)AbilityFlags.SourceStatusGrant => BuffName.ToString(),
+                        (uint)AbilityFlags.TargetStatusRemove => BuffName.ToString(),
+                        (uint)AbilityFlags.SourceStatusRemove => BuffName.ToString(),
+                        (uint)AbilityFlags.GaugeCharge => GaugeName.ToString(),
+                        _ => Status.ToString(),
+                    };
+                }
+            }
+
+            public String BuffName
+            {
+                get
+                {
+                    if (Enum.IsDefined(typeof(BuffDebuff), Status))
+                        return ((BuffDebuff)Status).ToString();
+                    else
+                        return (Status & 0x7FFF).ToString("X4");
+                }
+            }
+
+            public String GaugeName
+            {
+                get
+                {
+                    if (Enum.IsDefined(typeof(Gauge), Status))
+                        return ((Gauge)Status).ToString();
+                    else
+                        return (Status & 0x7FFF).ToString("X4");
+                }
+            }
 
             public int Damage 
             {
@@ -182,16 +354,13 @@ namespace Offmodel.FFXIV.Log.Model
             {
                 get
                 {
-                    switch (Type)
+                    return Type switch
                     {
-                        case (uint)AbilityFlags.Damage:
-                        case (uint)AbilityFlags.BlockedDamage:
-                        case (uint)AbilityFlags.ParriedDamage:
-                            return true;
-
-                        default:
-                            return false;
-                    }
+                        (uint)AbilityFlags.Damage => true,
+                        (uint)AbilityFlags.BlockedDamage => true,
+                        (uint)AbilityFlags.ParriedDamage => true,
+                        _ => false
+                    };
                 }
             }
 
