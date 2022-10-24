@@ -5,4 +5,29 @@
     <RootNamespace>Offmodel.FFXIV.Log.Model</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="DataSet1.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="DataSet1.xsc" />
+    <None Remove="DataSet1.xsd" />
+    <None Remove="DataSet1.xss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="FFXIVNames.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FFXIVNames.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="FFXIVNames.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FFXIVNames.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

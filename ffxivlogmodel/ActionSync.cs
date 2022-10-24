@@ -17,14 +17,14 @@ namespace Offmodel.FFXIV.Log.Model
 
     class ActionSync: LogEvent
     {
-        public uint ActionId { get; }
+        public uint CorrelationId { get; }
 
         public Actor Target { get; }
 
         public ActionSync(LogLine source, State state): base(source)
         {
             Target = state.Actors.GetActor(uint.Parse(source.Text(2), NumberStyles.HexNumber));
-            ActionId = uint.Parse(source.Text(4), NumberStyles.HexNumber);
+            CorrelationId = uint.Parse(source.Text(4), NumberStyles.HexNumber);
         }
     }
 }

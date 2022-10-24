@@ -27,7 +27,7 @@ namespace Offmodel.FFXIV.Log.Model
             actors.Remove(id);
         }
 
-        public Actor? GetActor(uint id)
+        public Actor GetActor(uint id)
         {
             return actors.ContainsKey(id) ? actors[id] : null;
         }

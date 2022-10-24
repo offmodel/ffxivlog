@@ -10,13 +10,11 @@ namespace Offmodel.FFXIV.Log.Model
     {
         public uint EventId { get; }
         public DateTime EventTime { get; }
-        public LogLine Line { get; }
 
         public LogEvent(LogLine line)
         {
             EventId = uint.Parse(line.Text(0));
             EventTime = DateTime.Parse(line.Text(1));
-            Line = line;
         }
     }
 }

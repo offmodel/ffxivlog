@@ -16,7 +16,6 @@ namespace viewer
     /// </summary>
     public partial class MainWindow : Window
     {
-        private string? Path;
         private ObservableCollection<LogEvent> Data = new();
         private Func<LogEvent, bool> Filter = e => true;
 
@@ -27,13 +26,15 @@ namespace viewer
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog file = new() { FileName = Path };
+            OpenFileDialog file = new();
             if (file.ShowDialog() == true)
             {
-                Path = file.FileName;
-                Parser parser = new(new StreamReader(File.OpenRead(Path)));
-                Data = new ObservableCollection<LogEvent>(parser.Events.Where(Filter));
-                DataGrid.ItemsSource = Data.Where(Filter);
+                using (StreamReader sr = new StreamReader(file.FileName))
+                {
+                    Parser parser = new(sr);
+                    Data = new ObservableCollection<LogEvent>(parser.Events.Where(Filter));
+                    DataGrid.ItemsSource = Data.Where(Filter);
+                }
             }
         }
 
@@ -75,7 +76,7 @@ namespace viewer
             DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Initiator", Binding = new Binding("Initiator.Name") });
             DataGrid.Columns.Add(new DataGridTextColumn() { Header = "AbilityName", Binding = new Binding("AbilityName") });
             DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Target", Binding = new Binding("Target.Name") });
-            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "ActionId", Binding = new Binding("ActionId") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "CorrelationId", Binding = new Binding("CorrelationId") });
             DataGrid.Columns.Add(new DataGridTextColumn() { Header = "HitIndex", Binding = new Binding("HitIndex") });
             DataGrid.Columns.Add(new DataGridTextColumn() { Header = "HitTotal", Binding = new Binding("HitTotal") });
             DataGrid.Columns.Add(new DataGridTextColumn() { Header = "IsDamage", Binding = new Binding("FirstEffect.IsDamage") });
@@ -88,7 +89,44 @@ namespace viewer
             DetailGrid.Columns.Add(new DataGridTextColumn() { Header = "IsCritical", Binding = new Binding("IsCritical") });
             DetailGrid.Columns.Add(new DataGridTextColumn() { Header = "IsDirectHit", Binding = new Binding("IsDirectHit") });
             DetailGrid.Columns.Add(new DataGridTextColumn() { Header = "Effect", Binding = new Binding("EffectValue") });
+            DetailGrid.Columns.Add(new DataGridTextColumn() { Header = "ExtraData", Binding = new Binding("DescData") });
 
+            DataGrid.ItemsSource = Data.Where(Filter);
+        }
+
+        private void ActorBuffs()
+        {
+            Filter = e => e is ActorBuffs;
+
+            DataGrid.Columns.Clear();
+            DetailGrid.Columns.Clear();
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "EventType", Binding = new Binding("EventId") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Time", Binding = new Binding("EventTime") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Actor", Binding = new Binding("Actor.Name") });
+
+            DetailGrid.Columns.Add(new DataGridTextColumn() { Header = "Name", Binding = new Binding("BuffName") });
+            DetailGrid.Columns.Add(new DataGridTextColumn() { Header = "Duration", Binding = new Binding("Duration") });
+            DetailGrid.Columns.Add(new DataGridTextColumn() { Header = "Data", Binding = new Binding("BuffData") });
+            DetailGrid.Columns.Add(new DataGridTextColumn() { Header = "Source", Binding = new Binding("Source.Name") });
+
+            DataGrid.ItemsSource = Data.Where(Filter);
+        }
+
+        private void BuffChanges()
+        {
+            Filter = e => e is BuffUpdate;
+
+            DataGrid.Columns.Clear();
+            DetailGrid.Columns.Clear();
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "EventType", Binding = new Binding("EventId") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Time", Binding = new Binding("EventTime") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Id", Binding = new Binding("Buff") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Name", Binding = new Binding("BuffName") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Duration", Binding = new Binding("Duration") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Source", Binding = new Binding("Source.Name") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Target", Binding = new Binding("Target.Name") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Count", Binding = new Binding("Count") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Expired", Binding = new Binding("Expired") });
             DataGrid.ItemsSource = Data.Where(Filter);
         }
 
@@ -108,6 +146,14 @@ namespace viewer
                 case 3:
                     Actions();
                     break;
+
+                case 4:
+                    BuffChanges();
+                    break;
+
+                case 5:
+                    ActorBuffs();
+                    break;
             }
         }
 
@@ -119,6 +165,10 @@ namespace viewer
                 if (ev is Action)
                 {
                     DetailGrid.ItemsSource = ((Action)ev).Effects;
+                }
+                else if (ev is ActorBuffs)
+                {
+                    DetailGrid.ItemsSource = ((ActorBuffs)ev).Buffs;
                 }
                 else
                 {

@@ -27,8 +27,15 @@ namespace Offmodel.FFXIV.Log.Model
                 case 22:
                     return new Action(logLine, state);
 
+                case 26:
+                case 30:
+                    return new BuffUpdate(logLine, state);
+
                 case 37:
                     return new ActionSync(logLine, state);
+
+                case 38:
+                    return new ActorBuffs(logLine, state);
 
                 default:
                     return new LogEvent(logLine);

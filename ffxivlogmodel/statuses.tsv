@@ -1,0 +1,3354 @@
+#	Name
+1	Petrification
+2	Stun
+3	Sleep
+4	Daze
+5	Amnesia
+6	Pacification
+7	Silence
+8	Haste
+9	Slow
+10	Slow
+11	Confused
+12	Levitation
+13	Bind
+14	Heavy
+15	Blind
+17	Paralysis
+18	Poison
+19	Pollen
+20	TP Bleed
+21	HP Boost
+22	HP Penalty
+23	MP Boost
+24	MP Penalty
+25	Attack Up
+26	Attack Down
+27	Accuracy Up
+28	Accuracy Down
+29	Defense Up
+30	Defense Down
+31	Evasion Up
+32	Evasion Down
+33	Attack Magic Potency Up
+34	Attack Magic Potency Down
+35	Healing Potency Up
+36	Healing Potency Down
+37	Magic Defense Up
+38	Magic Defense Down
+39	Stun Resistance
+40	Silence Resistance
+41	Crafting Facility
+42	The Echo
+43	Weakness
+44	Brink of Death
+45	Crafter's Grace
+46	Gatherer's Grace
+47	Sneak
+48	Well Fed
+49	Medicated
+50	Sprint
+51	Strength Down
+52	Vitality Down
+53	Physical Damage Up
+54	Physical Damage Down
+55	Physical Vulnerability Down
+56	Physical Vulnerability Up
+57	Magic Damage Up
+58	Magic Damage Down
+59	Magic Vulnerability Down
+60	Magic Vulnerability Up
+61	Damage Up
+62	Damage Down
+63	Vulnerability Down
+64	Vulnerability Up
+65	Critical Skill
+66	Terror
+67	Leaden
+68	Drainstrikes
+69	Aspirstrikes
+70	Stunstrikes
+71	Rampart
+72	Convalescence
+73	Awareness
+74	Sentinel
+75	Tempered Will
+76	Fight or Flight
+77	Bulwark
+78	Sword Oath
+79	Iron Will
+80	Cover
+81	Covered
+82	Hallowed Ground
+83	Foresight
+84	Bloodbath
+85	Maim
+86	Berserk
+87	Thrill of Battle
+88	Holmgang
+89	Vengeance
+90	Storm's Eye
+91	Defiance
+92	Unchained
+93	Wrath
+94	Wrath II
+95	Wrath III
+96	Wrath IV
+97	Infuriated
+98	Dragon Kick
+99	Featherfoot
+100	Internal Release
+101	Twin Snakes
+102	Mantra
+103	Fists of Fire
+104	Fists of Earth
+105	Fists of Wind
+106	Touch of Death
+107	Opo-opo Form
+108	Raptor Form
+109	Coeurl Form
+110	Perfect Balance
+111	Greased Lightning
+112	Greased Lightning II
+113	Greased Lightning III
+114	Keen Flurry
+115	Heavy Thrust
+116	Life Surge
+117	Blood for Blood
+118	Chaos Thrust
+119	Phlebotomize
+120	Power Surge
+121	Disembowel
+122	Straight Shot Ready
+123	Hawk's Eye
+124	Venomous Bite
+125	Raging Strikes
+126	Physical Vulnerability Up
+127	Diversion
+128	Barrage
+129	Windbite
+130	Straight Shot
+131	Downpour of Death
+132	Quicker Nock
+133	Swiftsong
+134	Swiftsong
+135	Mage's Ballad
+136	Mage's Ballad
+137	Army's Paeon
+138	Army's Paeon
+139	Foe Requiem
+140	Foe Requiem
+141	Battle Voice
+142	Stun
+143	Aero
+144	Aero II
+145	Cleric Stance
+146	Protect
+147	Protect
+148	Raise
+149	Stun
+150	Medica II
+151	Stoneskin
+152	Stoneskin (Physical)
+153	Stoneskin (Magical)
+154	Shroud of Saints
+155	Freecure
+156	Overcure
+157	Presence of Mind
+158	Regen
+159	Divine Seal
+160	Surecast
+161	Thunder
+162	Thunder II
+163	Thunder III
+164	Thundercloud
+165	Firestarter
+166	Succor
+167	Swiftcast
+168	Manaward
+169	Manawall
+170	Apocatastasis
+171	Ekpyrosis
+172	Infirmity
+173	Astral Fire
+174	Astral Fire II
+175	Astral Fire III
+176	Umbral Ice
+177	Umbral Ice II
+178	Umbral Ice III
+179	Bio
+180	Miasma
+181	Disease
+182	Virus
+183	Fever
+184	Sustain
+185	Eye for an Eye
+186	Eye for an Eye
+187	Rouse
+188	Miasma II
+189	Bio II
+190	Shadow Flare
+191	Malady
+192	Spur
+193	Slow
+194	Shield Wall
+195	Stronghold
+196	Last Bastion
+197	Blaze Spikes
+198	Ice Spikes
+199	Shock Spikes
+200	Physical Vulnerability Up
+201	Stun
+202	Vulnerability Up
+203	Boost
+204	Enfire
+205	Enblizzard
+206	Enaero
+207	Enstone
+208	Enthunder
+209	Enwater
+210	Doom
+211	Sharpened Knife
+212	True Sight
+213	Pacification
+214	Agitation
+215	Damage Down
+216	Paralysis
+217	Triangulate
+218	Gathering Rate Up
+219	Gathering Yield Up
+220	Gathering Fortune Up
+221	Truth of Forests
+222	Truth of Mountains
+223	Byregot's Ward
+224	Nophica's Ward
+225	Prospect
+226	Haste
+227	Seduced
+228	Menphina's Ward
+229	Nald'thal's Ward
+230	Llymlaen's Ward
+231	Thaliak's Ward
+232	Preparation
+233	Arbor Call
+234	Lay of the Land
+235	Windburn
+236	Choco Beak
+237	Choco Regen
+238	Choco Surge
+239	The Echo
+240	Heavy
+241	Blessing of Light
+242	Arbor Call II
+243	Lay of the Land II
+244	Fracture
+245	Sanction
+246	Demolish
+247	Rain of Death
+248	Circle of Scorn
+249	Flaming Arrow
+250	Burns
+251	Inner Quiet
+252	Waste Not
+253	Steady Hand
+254	Great Strides
+255	Ingenuity
+256	Ingenuity II
+257	Waste Not II
+258	Manipulation
+259	Innovation
+260	Reclaim
+261	Comfort Zone
+262	Steady Hand II
+263	Damage Up
+264	Flesh Wound
+265	Stab Wound
+266	Concussion
+267	Burns
+268	Frostbite
+269	Windburn
+270	Sludge
+271	Electrocution
+272	Dropsy
+273	Bleeding
+274	Recuperation
+275	Poison +1
+276	Voice of Valor
+277	Voice of Fortitude
+278	Relentless March
+279	Rehabilitation
+280	Bind
+281	Physical Damage Down
+282	Mana Modulation
+283	Dropsy
+284	Burns
+285	Frostbite
+286	Windburn
+287	Sludge
+288	Electrocution
+289	Dropsy
+290	Damage Up
+291	Hundred Fists
+292	Fetters
+293	Skill Speed Up
+294	Spell Speed Up
+295	Goldbile
+296	Hysteria
+297	Galvanize
+298	Sacred Soil
+299	Sacred Soil
+300	Damage Up
+301	Critical Strikes
+302	Gold Lung
+303	Burrs
+304	Aetherflow
+305	The Dragon's Curse
+306	Inner Dragon
+307	Voice of Valor
+308	Voice of Fortitude
+309	Relentless March
+310	Curl
+311	Earthen Ward
+312	Razed Earth
+313	Radiant Shield
+314	Inferno
+315	Whispering Dawn
+316	Fey Covenant
+317	Fey Illumination
+318	Fey Glow
+319	Fey Light
+320	Bleeding
+321	Gungnir
+322	Crystal Veil
+323	Reduced Immunity
+324	Greenwrath
+325	Invincibility
+326	Lightning Charge
+327	Ice Charge
+328	Heart of the Mountain
+329	Modification
+330	Haste
+331	Magic Vulnerability Down
+332	Damage Up
+333	Allagan Rot
+334	Allagan Immunity
+335	Firestream
+336	Sequence AB1
+337	Sequence AP1
+338	Sequence AS1
+339	Bleeding
+340	Physical Field
+341	Aetherial Field
+342	Repelling Spray
+343	Bleeding
+344	Neurolink
+345	Recharge
+346	Waxen Flesh
+347	Pox
+348	Disseminate
+349	Steel Scales
+350	Vulnerability Down
+351	Rancor
+352	Spjot
+353	Brave New World
+354	Live off the Land
+355	What You See
+356	Eat from the Hand
+357	In Control
+358	Snowman
+359	Fey Fire
+360	Meat and Mead
+361	That Which Binds Us
+362	Proper Care
+364	Reduced Rates
+365	The Heat of Battle
+366	A Man's Best Friend
+367	Earth and Water
+368	Helping Hand
+369	Viscous Aetheroplasm
+370	Siren Song
+371	Zombification
+372	Brood Rage
+373	Blight
+374	Corrupted Crystal
+375	Suppuration
+376	Searing Wind
+377	Infernal Fetters
+378	Death Throes
+379	Thermal Low
+380	Thermal High
+381	Sword Oath
+383	Growing
+384	Full-grown
+385	Fool's Tightrope
+386	Unfooled
+387	Fool's Tumble
+388	Fool's Figure
+389	Skewer
+390	Growing
+391	Full-grown
+392	Royal Guard
+393	Iron Will
+394	Invincibility
+395	Physical Damage Down
+396	Concentration
+397	Safeguard
+398	Astral Realignment
+399	Corporeal Return
+400	Charge
+401	Seized
+402	Thrown for a Loop
+403	Damage Up
+404	Transporting
+405	Bewildered
+406	Vulnerability Down
+407	Dust Poisoning
+408	Storm's Path
+409	Holmgang
+410	Antibody
+411	Inner Beast
+412	Hover
+413	Mark Up
+414	Seal Sweetener
+415	Regain
+416	Transparent
+417	Protect
+418	Transcendent
+419	Misty Veil
+420	Prey
+421	Devoured
+422	Healing Magic Down
+423	Nightmare
+424	Diabolic Curse
+425	Eerie Air
+426	Noctoshield
+427	Slow+
+428	Haste+
+429	Scale Flakes
+430	Misery
+431	Water Resistance Down
+432	Briny Mirror
+433	Briny Veil
+434	Absolute Bind
+435	Demon Eye
+436	Briar
+437	Stone Curse
+438	Minimum
+439	Toad
+440	Minimum
+441	Toad
+442	Slow
+443	Damage Up
+444	Vulnerability Up
+445	Thorny Vine
+446	Honey-glazed
+447	Potent Acid
+448	Swarmed
+449	Stung
+450	Petrification Resistance
+451	Cursed Voice
+452	Cursed Shriek
+453	Allagan Venom
+454	Allagan Field
+455	Languishing
+456	HP Penalty
+457	Bind+
+458	Raven Blight
+459	Normal Stance
+460	Aggressive Stance
+461	Subversive Stance
+462	Garrote Twist
+463	Garrote
+464	Firescorched
+465	Icebitten
+466	Thunderstruck
+467	Briny Veil
+468	Voidbound
+469	High and Mighty
+470	Pombination
+471	Moglight Resistance Down
+472	Mogdark Resistance Down
+473	Bemoggled
+474	Royal Rouse
+475	Slippery Prey
+476	Gloam
+477	Mantle of the Whorl
+478	Veil of the Whorl
+479	Rehabilitation
+480	Haste+
+481	Sprint
+482	Paralysis
+483	HP Boost
+484	Ink
+485	Dropsy
+486	Watery Grave
+487	Deep Freeze
+488	Shade Shift
+489	Kiss of the Wasp
+490	Kiss of the Viper
+491	Dancing Edge
+492	Mutilation
+493	Physical Vulnerability Up
+494	Magic Vulnerability Up
+495	Goad
+496	Mudra
+497	Kassatsu
+498	Infirmity
+500	Huton
+501	Doton
+502	Doton Heavy
+503	Burns
+504	Fetters
+505	Damage Up
+506	Vertigo
+507	Suiton
+508	Shadow Fang
+509	Aetherochemical Bomb
+510	Fetters
+511	Fire Toad
+512	Electroconductivity
+513	Static Condensation
+514	Causality
+515	Thunderclap
+516	Chaos
+517	Surge Protection
+518	Reflect
+519	Counter
+520	Fire Resistance Up
+521	Water Resistance Up
+522	Wind Resistance Up
+523	Lightning Resistance Up
+524	Earth Resistance Up
+525	Ice Resistance Up
+526	Frost Blade
+527	Frost Brand
+528	Frost Bow
+529	Invincibility
+530	Burns
+531	Dropsy
+532	Windburn
+533	Electrocution
+534	Sludge
+535	Frostbite
+536	Companion EXP Up
+537	Companion EXP Up II
+538	Companion Attack Up
+539	Companion Attack Up II
+540	Companion Healing Potency Up
+541	Companion Healing Potency Up II
+542	Companion Maximum HP Up
+543	Companion Maximum HP Up II
+544	Companion Enmity Up
+545	Companion Enmity Up II
+546	Enervation
+547	Facility Access: Production
+548	Facility Access: Finishing
+549	Facility Access: Detailing
+550	Facility Access: Production II
+551	Facility Access: Specialization
+552	Facility Access: Specialization II
+553	Facility Access: Detailing II
+554	Facility Access: Finishing II
+555	Repelling Spray
+556	Repelling Spray
+557	Repelling Spray
+558	Repelling Spray
+559	Poison
+560	Poison
+561	Slow
+562	Prey
+563	Vulnerability Up
+564	Bind
+565	Transfiguration
+566	Damage Up
+567	Six Fulms Under
+568	Fisher's Intuition
+569	Slime
+570	In the Line of Fire
+571	Blind
+572	Slashing Resistance Down
+573	Blunt Resistance Down
+574	Erratic Blaster
+575	Static Charge
+576	Lightning Resistance Down
+577	Barofield
+578	In the Headlights
+579	Critical Strikes
+580	Aetherochemical Nanospores α
+581	Aetherochemical Nanospores β
+582	Magic Vulnerability Down
+583	Physical Vulnerability Down
+584	Energy Field
+585	Energy Field Down
+586	HP Boost
+587	Forked Lightning
+588	Revelation Resistance Down
+589	Chain of Purgatory
+590	Arm of Purgatory
+591	Bluefire
+592	Ring of Fire
+593	Rise of the Phoenix
+594	Harvest
+595	Cloak of Death
+596	Suffocated Will
+597	Flare Dampening
+598	(仮)物理シールド(ストンスキン)
+599	(仮)魔法シールド(ストンスキン)
+600	Magic Vulnerability Down
+601	Physical Vulnerability Down
+602	Curse of the Mummy
+603	Mummification
+604	Thin Ice
+605	Frostbite
+606	Frozen
+607	Snowball
+608	Death Throes
+609	Seized
+610	Petrification
+611	Invigoration
+612	Wet Plate
+613	Imp
+614	Hidden
+615	Hidden
+616	Invisible
+617	Irradiated
+618	Area of Influence Up
+619	Burns
+620	Pacification
+621	Fire Resistance Down
+622	Rotting Lungs
+623	Disease
+624	Flesh Wound
+625	Down for the Count
+626	Out of the Action
+627	Neurolink
+628	Damage Down
+629	Infirmity
+630	Heavy
+631	Tireless
+632	Frenzied
+633	Lamed
+634	Silenced
+635	Distracted
+636	Brand of the Sullen
+637	Brand of the Ireful
+638	Vulnerability Up
+639	Pyretic
+640	Poison Resistance Up
+641	Choco Reflect
+642	Bleeding
+643	Bleeding
+644	Chicken
+645	Digesting
+646	Abandonment
+647	Atrophy
+648	Rehabilitation
+649	Attack Up
+650	Attack Magic Potency Up
+651	Haste
+652	HP & MP Boost
+653	Battle High
+654	Battle Fever
+655	Aegis Boon
+656	Invincibility
+657	Physical Vulnerability Up
+658	Magic Vulnerability Up
+659	Blight
+660	Extend
+661	Double
+662	Triple
+663	Red Light
+664	Prey
+665	Slippery Prey
+666	Electrocution
+667	Fetters
+668	Fetters
+669	Movement Speed Up
+670	Fire Resistance Down
+671	Invincibility
+672	Damage Up
+673	Nanoparticles
+674	Resin
+675	
+676	Concealed
+677	Concentrated Poison
+678	Tailwind
+679	Windwall
+680	Directional Parry
+681	Offensive Optimization
+682	Defensive Optimization
+683	Blessing of Earth
+684	Blessing of Fire
+685	Wind Resistance Down
+686	Poison
+687	Damage Up
+688	Hypercharge
+689	Mana Capacitor
+690	Muscle Activator
+691	Marked for Vulnerability Up
+692	Marked for Damage Down
+693	Marked for Healing Magic Down
+694	Hard Marked
+695	Physical Vulnerability Up
+696	Damage Down
+697	Healing Magic Down
+698	Positive Charge
+699	Negative Charge
+700	Throttle
+701	Battle Efficiency Down
+702	Bloated
+703	Draconian Gaze
+704	Draconian Light
+705	Transfiguration
+706	Luminous Aetheroplasm
+707	Decree Nisi A
+708	Decree Nisi B
+709	Heavy Feet
+710	Charge
+711	Temporary Insanity
+712	Tempered Will
+713	Severe Damage
+714	Vulnerability Up
+715	Staggered
+716	Turbulence
+717	Will of the Wind
+718	Will of the Water
+719	Whaleback
+720	Slashing Resistance Up
+721	Piercing Resistance Up
+722	Blunt Resistance Up
+723	Aetherochemical Bomb
+724	Strength Down
+725	Goring Blade
+726	Divine Veil
+727	Divine Veil
+728	Sheltron
+729	Deliverance
+730	Abandon
+731	Abandon II
+732	Abandon III
+733	Abandon IV
+734	Uncontrollable
+735	Raw Intuition
+736	Blood of the Dragon
+737	Ley Lines
+738	Circle of Power
+739	Asylum
+740	Shadowskin
+741	Scourge
+742	Blood Weapon
+743	Grit
+744	Dark Dance
+745	Blood Price
+746	Dark Mind
+747	Shadow Wall
+748	Delirium
+749	Salted Earth
+750	Another Victim
+751	Darkside
+752	Dark Arts
+753	Reprisal
+754	Gathering Rate Up (Limited)
+755	Gathering Fortune Up (Limited)
+756	Gathering Yield Up (Limited)
+757	Scrutiny
+758	Utmost Caution
+759	Gift of the Land II
+760	Single Mind
+761	Snagging
+762	Fish Eyes
+763	Chum
+764	Inefficient Hooking
+765	Catch and Release
+766	Anthropomorph
+767	Chiromorph
+768	Anemomorph
+769	Burning Chains
+770	Fetters
+773	Enliven
+774	Down for the Count
+775	Invincibility
+776	Invincibility
+777	Blessing of the Void
+778	Earthen Accord
+779	Out of Body
+780	Resonant
+781	Aether Sickness
+782	Unbridled
+783	Down for the Count
+784	Voidblood
+785	Nymian Plague
+786	Battle Litany
+787	Silhouette
+788	Shadewalker
+789	Smoke Screen
+790	Duality
+791	Dissipation
+792	Emergency Tactics
+793	First Chakra
+794	Second Chakra
+795	Third Chakra
+796	Fourth Chakra
+797	Fifth Chakra
+798	Aero III
+799	Fey Wind
+800	Fetters
+801	Poison
+802	Fang and Claw Bared
+803	Wheel in Motion
+804	Vulnerability Down
+805	Collector's Glove
+806	Vulnerability Up
+807	Aethertrail Attunement
+808	Dreadwyrm Trance
+809	Slime
+810	Living Dead
+811	Walking Dead
+812	Magic Vulnerability Down
+813	Dark Dance
+814	Enhanced Unleash
+815	Enhanced Benefic II
+816	Enhanced Royal Road
+817	Expanded Royal Road
+818	Extended Royal Road
+819	Slashing Resistance Down
+820	Piercing Resistance Down
+821	Blunt Resistance Down
+822	Fetters
+823	Seduced
+824	
+825	The Twelve's Bounty
+826	Card Drawn
+827	Royal Road
+828	Card Held
+829	The Balance
+830	The Bole
+831	The Arrow
+832	The Spear
+833	The Ewer
+834	The Spire
+835	Aspected Benefic
+836	Aspected Helios
+837	Nocturnal Field
+838	Combust
+839	Diurnal Sect
+840	Nocturnal Sect
+841	Lightspeed
+842	Luminiferous Aether
+843	Combust II
+844	Disabled
+845	Synastry
+846	Synastry
+847	Collective Unconscious
+848	Collective Unconscious
+849	Collective Unconscious
+850	Angler's Fortune
+851	Reassembled
+852	Promotion
+853	Rapid Fire
+854	Lead Shot
+855	Hot Shot
+856	Enhanced Slug Shot
+857	Cleaner Shot
+858	Gauss Barrel
+859	Rent Mind
+860	Dismantled
+861	Wildfire
+862	Ammunition Loaded
+863	Land Waker
+864	Dark Force
+865	The Wanderer's Minuet
+866	The Warden's Paean
+867	Sharpcast
+868	Enochian
+869	Carnal Chill
+870	Push Back
+871	Name of the Elements
+877	Nameless
+878	Maker's Mark
+879	Crafter's Soul
+880	Whistle
+893	Vulnerability Up
+894	Wind Resistance Down
+895	Invincibility
+896	Down for the Count
+897	Regen
+898	Lightning Resistance Down
+899	Physical Vulnerability Down
+900	Temporal Displacement
+901	Fetters
+902	Jackpot
+903	Collectable Synthesis
+904	Prey
+905	Thin Ice
+906	Darkness
+907	Arcanum Blessing
+908	Aethertrail Attunement
+909	Refresh
+910	Doom
+911	Thin Ice
+912	Vulnerability Down
+913	Balance Drawn
+914	Bole Drawn
+915	Arrow Drawn
+916	Spear Drawn
+917	Ewer Drawn
+918	Spire Drawn
+919	Heightened Visibility
+920	Balance Held
+921	Bole Held
+922	Arrow Held
+923	Spear Held
+924	Ewer Held
+925	Spire Held
+926	Sleep
+927	Nectar
+928	Black Menace
+929	Vulnerability Down
+930	Fetters
+931	Blunt Resistance Down
+932	Quarantine
+933	Healing Potency Down
+934	Physical Vulnerability Up
+937	Unwilling Host
+938	Throttle
+939	Out of the Action
+940	Bleeding
+941	Ranged Resistance
+942	Magic Resistance
+943	Light of Ascalon
+944	Sword of the Heavens
+945	Shield of the Heavens
+946	Legs of the Spider
+947	Wings of the Raptor
+948	Shocking Counter
+949	Burning Counter
+950	Freezing Counter
+951	Cutting Counter
+952	Burying Counter
+953	Drowning Counter
+954	Unrelenting Counter
+955	Healing Potency Up
+956	Wheel of Fortune
+957	Digestive Enzymes
+958	Prey
+959	Strings of the Marionette
+960	Pyretic
+961	Seized
+962	ATK Up
+963	ATK Down
+964	DEF Up
+965	DEF Down
+966	SPD Up
+967	SPD Down
+968	Arcana Breaker
+969	Invincibility
+970	Critter Resistance
+971	Monster Resistance
+972	Poppet Resistance
+973	Gadget Resistance
+974	Critter Vulnerability
+975	Monster Vulnerability
+976	Poppet Vulnerability
+977	Forced Withdrawal
+978	ATK & DEF Up
+979	Damage Over Time
+980	Expanded Attack
+981	Invincibility
+982	Critter Resistance
+983	Monster Resistance
+984	Poppet Resistance
+985	Gadget Resistance
+986	Bind
+987	Trapper
+988	Paralysis
+989	Rehabilitation
+990	Fetters
+991	Seduced
+992	Offense Kit
+993	Defense Kit
+994	Marked for Culling
+995	Headache
+996	Concussion
+997	Concussion
+998	Bigbulge Goblixer
+999	Swiftkicks Goblixer
+1000	Blankface Goblixer
+1001	Goblixer Overgulp
+1002	Goblixer Grumblygut
+1003	Bigbulge Biggerbrain
+1004	Anti-coagulant
+1005	Force Against Might
+1006	Force Against Magic
+1007	Invisible
+1008	Nohurts Goblixer
+1009	Road to Toad
+1010	Fetters
+1011	Concentrated Poison
+1012	High Wire
+1013	Reverse
+1014	Rehabilitation
+1015	Seed of Life
+1016	Damage Down
+1017	Physical Damage Up
+1018	Physical Damage Up
+1019	Magic Damage Up
+1020	Allied Arithmeticks
+1021	Low Arithmeticks
+1022	High Arithmeticks
+1023	Compressed Water
+1024	Compressed Lightning
+1025	Water Resistance Down II
+1026	Lightning Resistance Down II
+1027	Final Punishment
+1028	Direct Attack
+1029	Final Decree Nisi A
+1030	Final Decree Nisi B
+1031	Final Judgment: Max HP
+1032	Final Judgment: Min HP
+1033	Final Judgment: Penalty I
+1034	Final Judgment: Penalty II
+1035	Final Judgment: Penalty III
+1036	Final Judgment: Decree Nisi A
+1037	Final Judgment: Decree Nisi B
+1038	Final Flight
+1039	Brilliant Conviction
+1040	Brilliant Conviction
+1041	Brilliant Conviction
+1042	Direct Attack
+1043	Direct Attack
+1044	Magnetic Levitation
+1045	Gradual Zombification
+1046	Concentrated Poison
+1047	Confused
+1048	Direct Attack
+1049	Pyretic
+1050	EXP Bonus
+1051	Prey
+1052	Wind Resistance Down II
+1053	Earth Resistance Down II
+1054	Vulnerability Up
+1055	Fetters
+1056	Mimic
+1057	Feather Field
+1058	Super Sprint
+1059	Enervation
+1060	Silence
+1061	Priority Aetheryte Pass
+1062	Heavy Medal
+1063	Healing Potency Down
+1064	Off-balance
+1065	Brand of the Fallen
+1066	Bitter Hate
+1067	Dirty Venom
+1068	Assimilation
+1069	Assimilated
+1070	Cube
+1071	Pyramid
+1072	Acceleration Bomb
+1073	Digestive Fluid
+1074	Bleeding
+1075	Heart of Man
+1076	Heart of Dragon
+1077	Lightning Chain
+1078	Priority Seal Allowance
+1079	Gold Saucer VIP Card
+1080	Squadron Battle Manual
+1081	Squadron Survival Manual
+1082	Squadron Engineering Manual
+1083	Squadron Spiritbonding Manual
+1084	Squadron Rationing Manual
+1085	Squadron Gear Maintenance Manual
+1086	Squadron Enlistment Manual
+1087	Accursed Pox
+1088	Blind
+1089	HP Penalty
+1090	Damage Down
+1091	Haste
+1092	Amnesia
+1093	HP & MP Boost
+1094	Item Penalty
+1095	Sprint Penalty
+1096	Knockback Penalty
+1097	Auto-heal Penalty
+1098	Aetherial Surge
+1099	Healing Potency Up
+1100	Vulnerability Down
+1101	Toad
+1102	Chicken
+1103	Imp
+1104	Obfuscated
+1105	Pumpkin
+1106	Obfuscated
+1107	Heavy
+1108	Hidden
+1109	Impervious
+1110	Clawbound
+1111	Fangbound
+1112	Movement Speed Up
+1113	Out of the Action
+1114	Disease
+1115	Eternal Doom
+1116	Haste
+1117	Stab Wound
+1118	Passenger
+1119	Temporal Displacement
+1120	Defamation
+1121	Aggravated Assault
+1122	Shared Sentence
+1123	House Arrest
+1124	Restraining Order
+1125	Directional Invincibility
+1126	Main Hull Reassembly
+1127	Right Arm Reassembly
+1128	Left Arm Reassembly
+1129	Main Hull Operational
+1130	Right Arm Operational
+1131	Left Arm Operational
+1132	Extreme Caution
+1133	Pyretic
+1134	Imp
+1135	Sunseal
+1136	Moonseal
+1137	Fire Resistance Down II
+1138	Magic Vulnerability Up
+1139	Physical Damage Up
+1140	Raise
+1141	Heavy
+1142	Aetherial Surge
+1143	Infinite Fire
+1144	Infinite Ice
+1145	Keen Edge
+1146	Riled
+1147	Shadow Links
+1148	Shadow Limb
+1149	Wolf's Heart Kit
+1150	Deep Freeze
+1151	Fae Cloak
+1152	Darksight
+1153	Fetters
+1154	Beastking's Boon
+1155	Aetherial Enhancement
+1156	Magic Damage Up
+1157	Water Resistance Down II
+1158	Nose for Battle
+1159	Infinite Anguish
+1160	Enfeebled
+1161	Damage Up
+1162	Infinite Anguish
+1163	Stroke of Genius
+1164	Manipulation
+1165	Initial Preparations
+1166	Fathom
+1167	Shark Eye
+1168	Shark Eye II
+1169	Veteran Trade
+1170	Bountiful Catch
+1171	Nature's Bounty
+1172	Salvage
+1173	Truth of Oceans
+1174	Intervention
+1175	Passage of Arms
+1176	Arms Up
+1177	Inner Release
+1178	Blackest Night
+1179	Riddle of Earth
+1180	Earth's Reply
+1181	Riddle of Fire
+1182	Meditative Brotherhood
+1183	Right Eye
+1184	Left Eye
+1185	Brotherhood
+1186	Ten Chi Jin
+1187	Troubadour's Ballad
+1188	Critical Up
+1189	Troubadour's Paeon
+1190	Troubadour's Minuet
+1191	Rampart
+1192	Convalescence
+1193	Reprisal
+1194	Anticipation
+1195	Feint
+1196	Palisade
+1197	Tactician
+1198	Refresh
+1199	Peloton
+1200	Caustic Bite
+1201	Stormbite
+1202	Nature's Minne
+1203	Addle
+1204	Lucid Dreaming
+1205	Flamethrower
+1206	Wheel of Fortune
+1207	Largesse
+1208	Vulnerability Up
+1209	Arm's Length
+1210	Thunder IV
+1211	Triplecast
+1212	Further Ruin
+1213	Devotion
+1214	Bio III
+1215	Miasma III
+1216	Load-bearing
+1217	Thin Air
+1218	Divine Benison
+1219	Confession
+1220	Excogitation
+1221	Chain Stratagem
+1222	Fey Union
+1223	Fey Union
+1224	Earthly Dominance
+1225	Damage Up
+1226	Vulnerability Down
+1227	Yukikaze
+1228	Higanbana
+1229	Kaiten
+1230	Recuperation
+1231	Meditate
+1232	Third Eye
+1233	Meikyo Shisui
+1234	Verfire Ready
+1235	Verstone Ready
+1236	Enhanced Enpi
+1237	Enhanced Scatter
+1238	Acceleration
+1239	Embolden
+1240	Chiten
+1241	Monomachy
+1242	Monomachy
+1243	Dive Ready
+1244	Riddle of Wind
+1247	Diurnal Balance
+1248	Giant Dominance
+1249	Dualcast
+1250	True North
+1251	Turret Reset
+1252	Eyes Open
+1253	Prey
+1254	Deep Freeze
+1255	Fire Resistance Down II
+1256	Wounded
+1257	Forced March
+1258	Fetters
+1259	Old
+1260	Lightning Resistance Down II
+1262	Gathering Fortune Up II (Limited)
+1263	Rehabilitation
+1264	Brilliant Conviction
+1265	Brilliant Conviction
+1266	Transparent II
+1267	Affixed
+1268	In Event
+1269	Extreme Caution
+1270	Churning
+1271	Clashing
+1272	Slashing Resistance Down II
+1273	Sinking
+1274	Bardam's Price
+1275	Fire Convergence
+1276	Ice Convergence
+1277	Lightning Convergence
+1278	Aspected to Fire
+1279	Aspected to Ice
+1280	Aspected to Lightning
+1281	Empowered Rahu
+1282	Empowered Ketu
+1283	Confused
+1284	Out of the Action
+1285	Gathering Fortune Up II
+1286	Gathering Yield Up II
+1287	Seized
+1288	Twist of Fate
+1289	Twist of Fate
+1290	Vril
+1291	Ruination
+1292	Piggy
+1293	Forward March
+1294	About Face
+1295	Left Face
+1296	Right Face
+1297	Embolden
+1298	Fugetsu
+1299	Fuka
+1300	Cover
+1301	Covered
+1302	Hallowed Ground
+1303	Inner Release
+1304	Holmgang
+1305	Holmgang
+1306	Sole Survivor
+1307	Ice Spikes
+1308	Blackest Night
+1309	Demolish
+1310	Riddle of Earth
+1311	Earth's Reply
+1312	Chaos Thrust
+1313	Shadow Fang
+1314	Assassinated
+1315	Kakuremi
+1316	Hidden
+1317	Three Mudra
+1318	Yukikaze
+1319	Higanbana
+1320	Meikyo Shisui
+1321	Caustic Bite
+1322	Stormbite
+1323	Wildfire
+1324	Thunder
+1325	Swiftcast
+1326	Bio III
+1327	Miasma III
+1328	Electrocution
+1329	Withering
+1330	Regen
+1331	Galvanize
+1332	Chanchala
+1333	Eye for an Eye
+1334	Eye for an Eye
+1335	Abridged
+1336	Synastry
+1337	Synastry
+1338	The Balance
+1339	The Bole
+1340	The Ewer
+1341	The Spire
+1342	Sprint
+1343	Stun
+1344	Heavy
+1345	Bind
+1346	Slow
+1347	Silence
+1348	Sleep
+1349	Stun Resistance
+1350	Heavy Resistance
+1351	Bind Resistance
+1352	Slow Resistance
+1353	Silence Resistance
+1354	Sleep Resistance
+1355	Knockback Penalty
+1356	Imp
+1357	Gravity Flip
+1358	Elevated
+1359	Gradual Petrification
+1360	Unstable Gravity
+1361	Magitek Levitation
+1363	Sleep
+1364	Riddle of Wind
+1365	Thundercloud
+1366	Levitation
+1367	Impactful
+1368	Requiescat
+1369	Requiescat
+1370	Rage of Halone
+1371	Butcher's Block
+1372	Power Slash
+1373	Immaterialized
+1374	Target Right
+1375	Target Left
+1376	Kyoshin
+1377	Life Drain
+1378	Dualcast
+1379	Almagest
+1380	White Wound
+1381	Black Wound
+1382	Beyond Death
+1383	HP Penalty
+1384	Acceleration Bomb
+1385	Off-balance
+1386	Sludge
+1387	Altered States
+1388	Ashen
+1389	Seduced
+1390	Levitation
+1391	Fetters
+1392	Shining Moonstone
+1393	Dualcast
+1394	Limp
+1395	Shield Oath
+1396	Defiance
+1397	Grit
+1398	Inner Beast
+1399	Fetters
+1400	Terror
+1401	Enervation
+1402	Vulnerability Up
+1403	Lightspeed
+1404	Divine Benison
+1405	Disabled
+1406	Chain Stratagem
+1407	Barrage
+1408	Cometeor
+1409	Terminal Velocity
+1410	Chanchala
+1411	The Road to 80
+1412	Vulnerability Up
+1413	Riddle of Fire
+1414	Battle Litany
+1415	Protect
+1416	Grounded
+1417	Stone Curse
+1418	Abandonment
+1419	The Worm's Curse
+1420	Mounted
+1421	Craven
+1422	Temporary Misdirection
+1423	Transfiguration
+1424	Divine Commandment: Flee
+1425	Divine Commandment: Turn
+1426	Unnerved
+1427	Drenched
+1429	Breathless
+1430	Legendary Resolve
+1431	Tower Defense
+1432	Tower Defense
+1433	Transfiguration
+1434	Mana Hypersensitivity
+1435	Piercing Resistance Down II
+1436	Phoenix's Blessing
+1437	Lohs Daih
+1438	Resonant
+1439	Independent Tactics
+1440	Offensive Tactics
+1441	Defensive Tactics
+1442	Balanced Tactics
+1443	Clockwork
+1444	Magitek Field
+1445	The Deceiver
+1446	The Upholder
+1447	Elemental EXP Up
+1448	Transfiguration
+1449	Troubadour's Minuet
+1450	Troubadour's Paeon
+1451	Lord of Crowns
+1452	Lady of Crowns
+1453	Right Eye
+1454	Left Eye
+1455	Flamethrower
+1456	Thrill of War
+1457	Shake It Off
+1458	Flamethrower Flames
+1459	Transfiguration
+1460	Fetters
+1461	Elemental Blessing: EXP
+1462	Out of the Action
+1463	Elemental Blessing: Damage
+1464	Time's Up
+1465	Soaring
+1466	Stab Wound
+1467	Yellow Paint
+1468	Blue Paint
+1469	Black Paint
+1470	Red Paint
+1471	Last Kiss
+1472	Apathetic
+1473	Cemented
+1474	Filthy
+1475	Aether Rot
+1476	Aether Rot Immunity
+1477	Fetters
+1478	Connectivity
+1479	Falling
+1480	Unrelenting Anguish
+1481	Ominous Wind
+1482	Mana Charge
+1483	Fire Charged
+1484	Blizzard Charged
+1485	Thunder Charged
+1486	Jester's Antics
+1487	Jester's Truths
+1488	Incurable
+1489	Ultros Simulation
+1490	Air Force Simulation
+1491	Dadaluma Simulation
+1492	Bibliotaph Simulation
+1493	Virus
+1494	Face in the Crowd
+1495	Scalebound
+1496	Vanished
+1497	Fetters
+1498	Shocked
+1499	Heavy Medal
+1500	Heavy Medal
+1501	Heavy Medal
+1502	Heavy Medal
+1503	Light Medal
+1504	Light Medal
+1505	Light Medal
+1506	Light Medal
+1507	Pollen
+1508	Windburn
+1509	Slow
+1510	Sleep
+1511	Petrification
+1512	Knockback Penalty
+1513	Stun
+1514	スリル・オブ・ウォー：効果
+1515	Hover
+1516	Cemented
+1517	Fire Resistance Up
+1518	King of the Skies
+1519	Drubbed
+1520	Mounted
+1521	Stun
+1522	Stun
+1523	Haste+
+1524	Blind
+1525	Thermal Low
+1526	Thermal High
+1527	Accursed Flame
+1528	Aetherially Charged
+1529	Woken
+1530	Beyond Limits
+1531	Down the Rabbit Hole
+1532	Viscous Aetheroplasm
+1533	Airbound
+1534	Role-playing
+1535	Full Moon
+1536	New Moon
+1537	Blood Moon
+1538	Moonlit
+1539	Moonshadowed
+1540	Veil of Shadow
+1541	Veil of Light
+1542	Haunt
+1543	Haunt
+1544	Damage Up
+1545	Vulnerability Down
+1546	Odder
+1547	Indomitable Spirit
+1548	Sprint
+1549	Unmagicked
+1550	Magnetic Lysis +
+1551	Magnetic Lysis -
+1552	Magnetic Levitation
+1553	The One Dragon
+1554	Borne Heart
+1555	Heartless
+1556	Threatened
+1557	HP Penalty
+1558	HP Boost +1
+1559	HP Boost +2
+1560	HP Boost +3
+1561	HP Boost +4
+1562	Computation Mode
+1563	Tartarus Mode
+1564	Annihilation Mode
+1565	Computation Boost
+1566	Computation Error
+1567	Primal Rage
+1568	Slow+
+1569	Auspicious
+1570	Invincibility
+1571	Temporal Barrier
+1572	Damage Up
+1573	Grudge
+1574	
+1575	Brotherly Love
+1576	石化の呪い
+1577	Burns
+1578	Searing Wind
+1579	Thin Ice
+1580	Thin Ice
+1581	Adaptation
+1582	Mutation
+1583	Elemental EXP Up
+1584	Komainu's Favor
+1585	Inugami's Favor
+1586	Senri's Favor
+1587	Elemental Harmony
+1588	Mutation
+1589	Mutation
+1590	Light in the Dark
+1591	Woken
+1592	Damage Up
+1593	Adaptation
+1594	Hundred Fists
+1595	Heavy
+1596	Sleep
+1597	Vulnerability Up
+1598	Mutation
+1599	Pyretic
+1600	Entropy
+1601	Dynamic Fluid
+1602	Headwind
+1603	Tailwind
+1604	Accretion
+1605	Primordial Crust
+1606	Muddy
+1607	●弱点：雷属性
+1608	Transfiguration
+1609	Transfiguration
+1610	Landborne
+1611	Arcane Bulwark
+1612	Defenseless
+1613	Burning Soul
+1614	Fetters
+1615	Crumbling Bulwark
+1616	Death from Above
+1617	Death from Below
+1618	Logos-minded
+1619	Preoccupied
+1620	Unveiled
+1621	Concealed
+1622	Critical Strikes
+1623	Live Wire
+1624	Looper
+1625	Memory Degredation
+1626	Memory Loss
+1627	Chains of Memory
+1628	Gradual Petrification
+1629	Kill Command
+1630	Love's True Form
+1631	Wisdom of the Aetherweaver
+1632	Wisdom of the Martialist
+1633	Wisdom of the Platebearer
+1634	Wisdom of the Guardian
+1635	Wisdom of the Ordained
+1636	Wisdom of the Skirmisher
+1637	Wisdom of the Watcher
+1638	Wisdom of the Templar
+1639	Wisdom of the Irregular
+1640	Wisdom of the Breathtaker
+1641	Spirit of the Remembered
+1642	Protect L
+1643	Shell L
+1644	Swift L
+1645	Rapid Recast
+1646	Bravery L
+1647	Solid Shield
+1648	Spell Shield
+1649	Reflect L
+1650	Poison L
+1651	Refresh L
+1652	Magic Burst
+1653	Double Edge L
+1654	Spirit Dart L
+1655	Banish L
+1656	Boost
+1657	Incense L
+1658	Omega
+1659	Infinite Limit
+1660	Packet Filter M
+1661	Packet Filter F
+1662	Local Resonance
+1663	Remote Resonance
+1664	Critical Synchronization Bug
+1665	Critical Overflow Bug
+1666	Critical Underflow Bug
+1667	Synchronization Debugger
+1668	Overflow Debugger
+1669	Underflow Debugger
+1670	Latent Defect
+1671	Cascading Latent Defect
+1672	Local Regression
+1673	Remote Regression
+1674	Omega-M
+1675	Omega-F
+1676	Superfluid
+1677	Bloodbath L
+1678	
+1679	Spell-in-Waiting: Return IV
+1680	Spell-in-Waiting: Flare
+1681	Paying the Piper
+1682	Sleeping Dark
+1683	Sleeping Light
+1684	Break III Edict
+1685	Rush Edict
+1686	Tornado Edict
+1687	Rehabilitation
+1688	Group Oriented
+1689	Primary Target
+1690	Skyborne
+1691	Landborne
+1692	Guardian Spirit
+1693	Slashing Resistance Down
+1694	Piercing Resistance Down
+1695	Apathetic
+1696	Drowning
+1697	Invincibility
+1698	Mutation
+1699	Looming Crescendo
+1700	Mutation
+1701	Electromagnetic Field
+1702	Ice Resistance Down
+1703	Biohacked
+1704	Looper
+1705	Hidden
+1706	Evasion Up
+1707	Right Unseen
+1708	Left Unseen
+1709	Back Unseen
+1710	Astral Essence
+1711	Umbral Essence
+1712	Astral Cloak
+1713	Umbral Cloak
+1714	Bleeding
+1715	Malodorous
+1716	Boost
+1717	Off-guard
+1718	Waxing Nocturne
+1719	Mighty Guard
+1720	Ice Spikes
+1721	Peculiar Light
+1722	Diamondback
+1723	Windburn
+1724	Veil of the Whorl
+1725	Cursekeeper
+1726	Fetters
+1727	Waning Nocturne
+1728	Contractual Obligation
+1729	Sheer Will
+1730	Flying High
+1731	Deep Freeze
+1732	Elemental EXP Up
+1733	Shieldbearer
+1734	Swordbearer
+1735	Heavenly Shield
+1736	Dropsy
+1737	Toad Oil
+1738	Doom
+1739	Wisdom of the Elder
+1740	Wisdom of the Duelist
+1741	Wisdom of the Fiendhunter
+1742	Wisdom of the Indomitable
+1743	Sacrifice
+1744	Stellation
+1745	Black Hole Buffer
+1746	Blown Away
+1747	Fearless
+1748	Guardians' Aegis
+1749	Area of Influence Up
+1750	Twin Fates
+1751	Soul of Fire
+1752	Soul of Ice
+1753	Blood Sacrifice
+1754	Aetherially Primed
+1755	Resurrection Restricted
+1756	Elemental Blessing
+1757	Fetters
+1758	Deep Freeze
+1759	Vulnerability Down
+1760	Damage Up
+1761	Ice Resistance Up
+1762	Down for the Count
+1763	HP Boost
+1764	Artificially Enhanced
+1765	Artificially Enhanced
+1766	Damage Up
+1767	Weak Magitek Field
+1768	Watery Grave
+1769	Doom
+1770	Damage Up
+1771	True Virtue
+1772	Aggressive Posture
+1773	Defensive Posture
+1774	Blazing Aramitama
+1775	Reforged
+1776	Blunt Resistance Down
+1777	Reforged
+1778	Hoofing It
+1779	Ajisai
+1780	魔力汚染
+1781	Damage Up
+1782	Vulnerability Down
+1783	Soul of Fire
+1784	Soul of Ice
+1785	Down for the Count
+1786	Pure Muscle
+1787	Burns
+1788	Frostbite
+1789	Vulnerability Up
+1790	Shadow Links
+1791	Magic Infusion
+1792	Artificial Boost
+1793	Mark of Mortality
+1794	Heated Up
+1795	Heated Up
+1796	Heavy
+1797	Critical Strikes
+1798	Dualcast
+1799	Fae Light
+1800	Bloated
+1801	Pick Clean
+1802	The Giving Land
+1803	Surface Slap
+1804	Identical Cast
+1805	Identical Gig
+1806	Reusing
+1807	Cocoon of the Penitent
+1808	Spell-in-Waiting
+1809	Spell-in-Waiting: Unholy Darkness
+1810	Spell-in-Waiting: Dark Fire III
+1811	Spell-in-Waiting: Hell Wind
+1812	Spell-in-Waiting: Shadoweye
+1813	Flesh Wound
+1814	Flourishing Cascade
+1815	Flourishing Fountain
+1816	Flourishing Windmill
+1817	Flourishing Shower
+1818	Standard Step
+1819	Technical Step
+1820	Threefold Fan Dance
+1821	Standard Finish
+1822	Technical Finish
+1823	Closed Position
+1824	Dance Partner
+1825	Devilment
+1826	Shield Samba
+1827	Improvisation
+1828	Improvisation
+1829	Invincibility
+1830	Monstrous
+1831	No Mercy
+1832	Camouflage
+1833	Royal Guard
+1834	Nebula
+1835	Aurora
+1836	Superbolide
+1837	Sonic Break
+1838	Bow Shock
+1839	Heart of Light
+1840	Heart of Stone
+1842	Ready to Rip
+1843	Ready to Tear
+1844	Ready to Gouge
+1845	Vulnerability Up
+1846	Curse of the Ronka
+1847	Esprit
+1848	Esprit
+1849	Fetters
+1850	Surging Waters
+1851	Splashing Waters
+1852	Swirling Waters
+1853	Smothering Waters
+1854	Sundering Waters
+1855	Sweeping Waters
+1856	Sheltron
+1857	Nascent Flash
+1858	Nascent Glint
+1859	Fading Fast
+1860	Vital Sign
+1861	Leaden Fist
+1862	Anatman
+1863	Draconian Fire
+1864	Lance Charge
+1865	Meditation
+1866	Bioblaster
+1867	Hellish Conduit
+1868	Everlasting Flight
+1869	Gale Enforcer
+1871	Dia
+1872	Temperance
+1873	Temperance
+1874	Angel's Whisper
+1875	Seraphic Illumination
+1876	Lord of Crowns
+1877	Lady of Crowns
+1878	Divination
+1879	Opposition
+1880	Nocturnal Opposition
+1881	Combust III
+1882	The Balance
+1883	The Bole
+1884	The Arrow
+1885	The Spear
+1886	The Ewer
+1887	The Spire
+1888	Diurnal Intersection
+1889	Intersection
+1890	Horoscope
+1891	Horoscope Helios
+1892	Neutral Sect
+1893	Scouring Waters
+1894	Dark Missionary
+1895	Biolysis
+1896	Recitation
+1897	Nascent Chaos
+1898	Brutal Shell
+1899	Electrocution
+1900	Winged Shield
+1901	Enshielded
+1902	Sword Oath
+1903	Phantasmal
+1904	Light in the Dark
+1905	Veil of Gukumatz
+1906	Perfect Deception
+1907	Faded Out
+1908	Fetters
+1909	Area of Influence Up
+1910	Right Eye
+1911	Asylum
+1912	Asylum
+1913	Vauthry's Blessing
+1914	Disembowel
+1915	Summon Order
+1916	Name of the Elements
+1917	Seraphic Veil
+1918	Catalyze
+1919	Damage Up
+1920	Diurnal Balance
+1921	Neutral Sect
+1922	Vauthry's Blessing
+1923	Vauthry's Blessing
+1924	Vauthry's Blessing
+1925	Vauthry's Blessing
+1926	Sleeve Draw
+1927	Trusty Shield
+1928	Levinskin
+1929	Light Beyond Darkness
+1931	Gunmetal Soul
+1932	Army's Muse
+1933	Army's Ethos
+1934	Troubadour
+1935	Soaking Wet
+1936	Stone Wall
+1937	In Event
+1938	Sprint
+1939	Beckoned
+1940	Chilled to the Bone
+1941	Accursed Poison
+1942	Ranging
+1943	Hastilude
+1944	Sacred Soil
+1945	Hoofing It
+1946	Wildfire
+1947	Sleep
+1948	Magic Damage Down
+1949	Splashing Waters
+1950	Down for the Count
+1951	Tactician
+1952	Hide
+1953	Down for the Count
+1954	Bunshin
+1955	Assassinate Ready
+1956	Souldeep Invisibility
+1957	
+1958	Forward March
+1959	About Face
+1960	Left Face
+1961	Right Face
+1962	Haste
+1963	Down for the Count
+1964	Summon Order II
+1965	Summon Order III
+1966	Summon Order IV
+1967	Sleep Resistance
+1968	Behelmed
+1969	Behelmed
+1970	Doom
+1971	Manafication
+1972	Delirium
+1973	Lightning Resistance Down II
+1974	Paradise Regained
+1975	Enlarged
+1976	Fully Enlarged
+1977	Full Swing
+1978	Rampart
+1979	アルティメイタム
+1980	アルティメイタム[被]
+1981	Blood for Blood
+1982	Bloodbath
+1983	Fetter Ward
+1984	Arm's Length
+1985	Peloton
+1986	Phantom Dart
+1987	Swiftcast
+1988	Addle
+1989	Manaward
+1990	Attunement
+1991	Sword Oath
+1992	Nascent Chaos
+1993	Shake It Off
+1994	ブラッドスピラー
+1995	クワイタス
+1996	Delirium
+1997	Brutal Shell
+1998	バーストストライク
+1999	フェイテッドサークル
+2000	Heart of Light
+2001	無敵
+2002	Ready to Rip
+2003	Ready to Tear
+2004	Ready to Gouge
+2005	Fists of Fire
+2006	Fists of Earth
+2007	Wind Resonance
+2008	Riddle of Earth
+2009	Wanderer's Minuet
+2010	Bunshin
+2011	Shade Shift
+2012	Corps-a-corps
+2013	Displacement
+2014	Trick Attack
+2015	陣風
+2016	士風
+2017	Repelling Shot
+2018	ワイルドファイア
+2019	Bioblaster
+2020	Intervention
+2021	Flourishing Fan Dance
+2022	Saber Dance
+2023	Standard Step
+2024	Standard Finish
+2025	Esprit
+2026	Closed Position
+2027	Dance Partner
+2028	三連魔
+2029	Fountain of Fire
+2030	Everlasting Flight
+2031	ヴァルエアロ
+2032	ヴァルサンダー
+2033	Engagement
+2034	Divination
+2035	Dia
+2036	Afflatus Solace
+2037	Temperance
+2038	Temperance
+2039	Biolysis
+2040	Seraphic Veil
+2041	Combust III
+2042	Diurnal Balance
+2043	Nocturnal Balance
+2044	Neutral Sect
+2045	シャーク
+2046	シャーク[被]
+2047	Wide Awake
+2048	En Avant
+2049	Technical Step
+2050	Technical Finish
+2051	Esprit
+2052	Fan Dance
+2053	Protect
+2054	Lord of Crowns Drawn
+2055	Lady of Crowns Drawn
+2056	
+2057	
+2058	
+2059	
+2060	
+2061	Nascent Flash
+2062	Nascent Glint
+2063	Draw Power
+2064	Draw Fortitude
+2065	Aurora
+2066	Drained Power
+2067	Drained Fortitude
+2068	Smackdown
+2069	Dissipation
+2070	Diurnal Opposition
+2071	Nocturnal Opposition
+2072	Focalization
+2073	Acidic Bite
+2074	Physical Damage Up
+2075	Thunder II
+2076	Confiteor
+2077	Inner Chaos
+2078	Chaotic Cyclone
+2079	Flesh Wound
+2080	Stab Wound
+2081	Concussion
+2082	Burns
+2083	Frostbite
+2084	Windburn
+2085	Sludge
+2086	Electrocution
+2087	Dropsy
+2088	Bleeding
+2089	Poison
+2090	Physical Vulnerability Up
+2091	Magic Vulnerability Up
+2092	Damage Down
+2093	Healing Magic Down
+2094	Water Resistance Down II
+2095	Lightning Resistance Down II
+2096	Wind Resistance Down II
+2097	Earth Resistance Down II
+2098	Fire Resistance Down II
+2099	Heavy
+2100	Unstable Gravity
+2101	Reprisal
+2102	Edge of Shadow
+2103	Concussion
+2104	Poison
+2105	Standard Finish
+2106	Spell-in-Waiting: Flare
+2107	
+2108	
+2109	Out of the Action
+2110	Ancient Circle
+2111	Prey
+2112	Prey
+2113	Standard Finish
+2114	Gobskin
+2115	Conked
+2116	Meatily Shielded
+2117	Meat Shield
+2118	Harmonized
+2119	Cactguard
+2120	HP Boost
+2121	Astral Attenuation
+2122	Umbral Attenuation
+2123	Physical Attenuation
+2124	Aetheric Mimicry: Tank
+2125	Aetheric Mimicry: DPS
+2126	Aetheric Mimicry: Healer
+2127	Brush with Death
+2128	Burning Brand
+2129	Freezing Brand
+2130	Surpanakha's Fury
+2131	Battle High I
+2132	Battle High II
+2133	Battle High III
+2134	Battle High IV
+2135	Battle High V
+2136	Mortal Flame
+2137	Final Decree Nisi γ
+2138	Final Decree Nisi δ
+2139	Final Judgment: Decree Nisi γ
+2140	Final Judgment: Decree Nisi δ
+2141	Final Judgment: Penalty IV
+2142	Compressed Water
+2143	Compressed Lightning
+2144	Water Resistance Down II
+2145	Lightning Resistance Down II
+2146	Enigma Codex
+2147	Enigma Codex
+2148	Contact Prohibition Ordained
+2149	Contact Regulation Ordained
+2150	Escape Prohibition Ordained
+2151	Escape Detection Ordained
+2152	Final Word: Contact Prohibition
+2153	Final Word: Contact Regulation
+2154	Final Word: Escape Prohibition
+2155	Final Word: Escape Detection
+2156	Suppuration
+2157	Oil
+2158	Heavy
+2159	Red Light
+2160	
+2161	Forward March
+2162	About Face
+2163	Left Face
+2164	Right Face
+2165	Temporal Displacement
+2166	Magitek Field
+2167	
+2168	Divine Veil
+2169	Divine Veil
+2170	Flood of Shadow
+2171	Dark Missionary
+2172	Arm's Length
+2173	Meditative Brotherhood
+2174	Brotherhood
+2175	Life Surge
+2176	Meditation
+2177	Tactician
+2178	Warden's Grace
+2179	Testudo
+2180	Fast Draw
+2181	Arm's Length
+2182	Excogitation
+2183	Nocturnal Field
+2184	Retaliation
+2185	Feint
+2186	Concentrate
+2187	Aetheric Burst
+2188	Largesse
+2189	Innovation
+2190	Final Appraisal
+2191	Muscle Memory
+2192	Blight
+2193	
+2194	Burns
+2195	
+2196	Light in the Dark
+2197	Death Becomes You
+2198	Vulnerability Down
+2199	Burns
+2200	Electrocution
+2201	Ancient Double
+2202	
+2203	Mortal Powder Mark
+2204	Normal
+2205	Running Hot: +1
+2206	Atlas
+2207	Unwavering Will
+2208	Blind to Rage
+2209	Blind to Grief
+2210	Pall of Rage
+2211	Pall of Grief
+2212	Running Hot: +2
+2213	Vulnerability Up
+2214	Army's Paeon
+2215	The Wanderer's Minuet
+2216	The Wanderer's Minuet
+2217	Mage's Ballad
+2218	Army's Paeon
+2219	Shadow of the Dragon
+2220	Damage Up
+2221	Final Judgment: Penalty III
+2222	Final Decree Nisi α
+2223	Final Decree Nisi β
+2224	Final Judgment: Decree Nisi α
+2225	Final Judgment: Decree Nisi β
+2226	Veneration
+2227	Nascent Flash
+2228	Surge Protection
+2229	Static Condensation
+2230	パニック
+2231	Fury's Bolt
+2232	System Shock
+2233	Electrified
+2234	
+2235	Hated of the Vortex
+2236	Hated of Embers
+2237	Irons of Purgatory
+2238	Astral Effect
+2239	Umbral Effect
+2240	Forward with Thee
+2241	Back with Thee
+2242	Left with Thee
+2243	Right with Thee
+2244	Anemomorph
+2245	Hated of Levin
+2246	Slow
+2247	Waymark
+2248	Blunt Resistance Down
+2249	Unstable
+2250	Lightheaded
+2251	Freezing
+2252	Deep Freeze
+2253	Refulgent Chain
+2254	Refulgent Chain
+2255	Refulgent Fate
+2256	Refulgent Fate
+2257	Lightsteeped
+2258	Wyrmclaw
+2259	Wyrmfang
+2260	Hated of Frost
+2261	Hated of the Wyrm
+2262	Grace of Light
+2263	Shock Spikes
+2264	Braced
+2265	Standing Firm
+2266	Seduced
+2267	Meat Shield
+2268	Running Cold: -1
+2269	FATE Participant
+2270	
+2271	Panic
+2272	
+2273	
+2274	Running Cold: -2
+2275	Intemperate
+2276	In Costume
+2277	Hot Brand: +1
+2278	Light Resistance Down
+2279	
+2280	Enlarged
+2281	Fully Enlarged
+2282	Embolden
+2283	Collective Unconscious
+2284	Running Wild
+2285	Fetters
+2286	Fetters
+2287	True Hallowed Ground
+2288	Shield Protocol A
+2289	Shield Protocol B
+2290	Shield Protocol C
+2291	Hot Brand: +2
+2292	Cold Brand: -1
+2293	Dash
+2294	Pyretic Booster
+2295	Aetherial Aegis
+2296	Cold Brand: -2
+2297	Hot Blade: +1
+2298	Hot Blade: +2
+2299	Cold Blade: -1
+2300	Cold Blade: -2
+2301	Tender Anaphylaxis
+2302	Jealous Anaphylaxis
+2303	True Walking Dead
+2304	Floating Fetters
+2305	Zombification
+2306	Boot Camp Mode
+2307	Safety Lock: Pyretic Booster
+2308	Safety Lock: Aetherial Aegis
+2309	A Bit Berserk
+2310	Truly Berserk
+2311	Spirit of the Aetherweaver
+2312	Spirit of the Martialist
+2313	Spirit of the Savior
+2314	Spirit of the Veteran
+2315	Spirit of the Platebearer
+2316	Spirit of the Guardian
+2317	Spirit of the Ordained
+2318	Spirit of the Skirmisher
+2319	Spirit of the Watcher
+2320	Spirit of the Profane
+2321	Spirit of the Irregular
+2322	Spirit of the Breathtaker
+2323	Spirit of the Bloodsucker
+2324	Spirit of the Beast
+2325	Spirit of the Templar
+2326	Banner of Noble Ends
+2327	Banner of Honored Sacrifice
+2328	Banner of Tireless Conviction
+2329	Banner of Firm Resolve
+2330	Banner of Solemn Clarity
+2331	Banner of Honed Acuity
+2332	Lost Font of Magic
+2333	Lost Protect
+2334	Lost Shell
+2335	Lost Swift
+2336	Lost Stealth
+2337	Lost Reflect
+2338	Lost Spellforge
+2339	Lost Steelsting
+2340	Lost Banish
+2341	Lost Bravery
+2342	Auto-potion
+2343	Auto-ether
+2344	Auto-remedy
+2345	Lost Manawall
+2346	Lost Font of Power
+2347	Vulnerability Up
+2348	Reminiscence
+2349	Deep Essence of the Victor
+2350	Hastilude
+2351	Hastilude Heartened
+2352	Banner of Unyielding Defense
+2353	Banner of Limitless Grace
+2354	Banner of Transcendent Finesse
+2355	Reraise
+2356	Lost Incense
+2357	Fully Analyzed
+2358	Marching Orders
+2359	Marching Orders: Vigil for the Lost
+2360	Marching Orders: Kill It with Fire
+2361	Marching Orders: The Hunt for Red Choctober
+2362	Marching Orders: The Final Furlong
+2363	Marching Orders: Rise of the Robots
+2364	Marching Orders: Metal Fox Chaos
+2365	High Morale
+2366	
+2367	Pall of Darkness
+2368	Warmonger
+2369	Physical Aversion
+2370	Magical Aversion
+2371	Lightning Resistance Down
+2372	Absolute Protect
+2373	Mark of Mortality
+2374	EP Penalty
+2375	Feelin' Hot
+2376	Quintuplecast
+2377	Imbued Saber
+2378	Haste+
+2379	Fresh Perspective
+2380	Warmonger
+2381	Forward March
+2382	About Face
+2383	Left Face
+2384	Right Face
+2385	Hypercharged Condensation
+2386	Stygian Tendrils
+2387	Curse of Darkness
+2388	Nausea
+2389	Pain
+2390	Hover
+2391	Heavy
+2392	Lightning Shot
+2393	
+2394	Damage Up
+2395	Vulnerability Down
+2396	At the Limit
+2397	
+2398	Incurable
+2399	Bleeding
+2400	孤独感
+2401	Burns
+2402	Evasion Up
+2403	Evasion Down
+2404	Damage Down
+2405	Out of Control
+2406	Shock Spikes
+2407	Fetters
+2408	Down for the Count
+2409	Process of Elimination A
+2410	Process of Elimination B
+2411	Process of Elimination C
+2412	Cover
+2413	Covered
+2414	
+2415	Duties as Assigned
+2416	Light Beyond Darkness
+2417	
+2418	Collector's Standard
+2419	Servant of Shadow
+2420	Servant of Shadow
+2421	Servant of Shadow
+2422	Servant of Shadow
+2423	Shadowed
+2424	Shackled Apart
+2425	Shackled Together
+2426	
+2427	
+2428	
+2429	
+2430	Wanderer's Fate
+2431	Sacrifice's Fate
+2432	Bleeding
+2433	Damage Up
+2434	Spirit of the Gambler
+2435	Spirit of the Elder
+2436	Spirit of the Duelist
+2437	Spirit of the Fiendhunter
+2438	Spirit of the Indomitable
+2439	Spirit of the Divine
+2440	Lost Flare Star
+2441	Lost Rend Armor
+2442	ロスト・ウェポンブレイク
+2443	Lost Aethershield
+2444	Lost Dervish
+2445	Sword-bearer
+2446	Shield-bearer
+2447	Reversal of Forces
+2448	Boosted
+2449	Resurrection Restricted
+2450	Mimicry
+2451	Powder Mark
+2452	Return
+2453	Return IV
+2454	Spell-in-Waiting: Unholy Darkness
+2455	Spell-in-Waiting: Dark Fire III
+2456	Spell-in-Waiting: Shadoweye
+2457	
+2458	
+2459	
+2460	Spell-in-Waiting: Dark Eruption
+2461	Spell-in-Waiting: Dark Water III
+2462	Spell-in-Waiting: Dark Blizzard III
+2463	Spell-in-Waiting: Dark Aero III
+2464	Spell-in-Waiting: Return
+2465	Ice Resistance Down II
+2466	Stock Holder
+2467	Pride of the Lioness
+2468	Junction Shiva
+2469	Junction Titan
+2470	Junction Loghrif
+2471	Head in the Clouds
+2472	Head in the Clouds
+2473	Aetherial Depletion
+2474	Movement Edict: 2 Squares
+2475	Movement Edict: 3 Squares
+2476	Movement Edict: 4 Squares
+2477	Movement Edict: 2 Squares
+2478	Movement Edict: 3 Squares
+2479	Movement Edict: 4 Squares
+2480	Your Move: 2 Squares
+2481	Your Move: 3 Squares
+2482	Your Move: 4 Squares
+2483	Twice-come Ruin
+2484	Cleric Stance
+2485	Twice-come Ruin
+2486	Sucked In
+2487	Mortal Powder Mark
+2488	Phantom Edge
+2489	Merciful Air
+2490	Baleful Air
+2491	Iron Air
+2492	Tingling
+2493	Cold Fog
+2494	Touch of Frost
+2495	Angel's Snack
+2496	Chelonian Gate
+2497	Auspicious Trance
+2498	Basic Instinct
+2499	Incendiary Burns
+2500	Dragon Force
+2501	Lightheaded
+2502	Phantom Flurry
+2503	Aetherial Ward
+2504	Minimum
+2505	Herbsona
+2506	Vulnerability Down
+2507	Damage Up
+2508	Slashing Resistance Down
+2509	Bloody Ruin
+2510	Torrential Ruin
+2511	Avaricious Ruin
+2512	Subtle Ruin
+2513	Formless Fist
+2514	Six-sided Star
+2516	Doom
+2517	Back from the Brink
+2518	Bind
+2519	Doom
+2520	Infirmity
+2521	HP Penalty
+2522	Damage Down
+2523	Restricted Access
+2524	Royal Favor
+2525	
+2526	
+2527	Mortal Powder Mark
+2528	Ice Spikes
+2529	Sucked In
+2530	Thrice-come Ruin
+2531	Spell-in-Waiting: Quietus
+2532	Cloying Condensation
+2533	Thrice-come Ruin
+2534	Twice-come Ruin
+2535	Distorted
+2536	
+2537	Strong of Spear
+2538	Strong of Shield
+2539	Stronger Together
+2540	Freezing Up
+2541	不浄の侵食
+2542	不浄の恐怖
+2543	Gelatinous
+2544	
+2545	Duel or Die
+2547	On Fire
+2548	Transfiguration
+2549	Nasty Surprise
+2550	Damage Up
+2551	Heavy
+2552	
+2553	One Mind
+2554	Lunar Defensive
+2555	Physical Damage Up
+2556	Magic Damage Up
+2557	Enthunder
+2558	Lost Burst
+2559	Lost Rampage
+2560	Lost Chainspell
+2561	Lost Protect II
+2562	Lost Shell II
+2563	Lost Bubble
+2564	Lost Excellence
+2565	Memorable
+2566	Lost Blood Rage
+2567	Blood Rush
+2568	Gullstorm
+2569	Cetaceous Speed
+2570	Auroral Flipper
+2571	Destiny Drawn
+2572	The Scroll
+2573	Break
+2574	Lightning Rod
+2575	Right Arm Primed
+2576	Left Arm Primed
+2577	FATE Participant
+2578	Immobile Suit
+2579	Guise
+2580	Marching Orders: Feeling the Burn
+2581	Marching Orders: On Serpents' Wings
+2582	Marching Orders: Never Cry Wolf
+2583	Marching Orders: Here Comes the Cavalry
+2584	Marching Orders: Worn to a Shadow
+2585	Marching Orders: A Familiar Face
+2586	Death's Design
+2587	Soul Reaver
+2588	Enhanced Gibbet
+2589	Enhanced Gallows
+2590	Enhanced Void Reaping
+2591	Enhanced Cross Reaping
+2592	Immortal Sacrifice
+2593	Enshrouded
+2594	Soulsow
+2595	Threshold
+2596	Crest of Time Borrowed
+2597	Crest of Time Borrowed
+2598	Crest of Time Returned
+2599	Arcane Circle
+2600	Circle of Sacrifice
+2601	Bloodsown Circle
+2602	Just Chilling
+2603	Hubris
+2604	Kardia
+2605	Kardion
+2606	Eukrasia
+2607	Eukrasian Diagnosis
+2608	Differential Diagnosis
+2609	Eukrasian Prognosis
+2610	Soteria
+2611	Zoe
+2612	Haima
+2613	Panhaima
+2614	Eukrasian Dosis
+2615	Eukrasian Dosis II
+2616	Eukrasian Dosis III
+2617	Physis
+2618	Kerachole
+2619	Taurochole
+2620	Physis II
+2621	Autophysis
+2622	Krasis
+2623	Pneuma
+2624	Primal Rend Ready
+2625	Ray of Fortitude
+2626	Ray of Valor
+2627	Ray of Succor
+2628	Adamant Purged
+2629	
+2630	
+2631	Down and Out
+2632	Program: #FFFFFFF
+2633	Program: #000000
+2634	Null White
+2635	Null Black
+2636	Bleeding
+2637	Sacred Soil
+2638	Sacred Soil
+2639	Fixed Sign
+2640	Fixed Sign
+2641	Fixed Sign
+2642	Haimatinon
+2643	Panhaimatinon
+2644	Front Unseen
+2645	Prey
+2646	Electrocution
+2647	Shadow of the Dragon
+2648	Transcendent
+2649	Empowered Beast
+2650	Leveilleur Dosis III
+2651	Manusya Berserk
+2652	Manusya Confuse
+2653	Manusya Stop
+2654	Who Is She
+2655	Who Is She
+2656	Stun
+2657	Acceleration Bomb
+2658	Deep Freeze
+2659	
+2660	 
+2661	Skyblind
+2662	Planar Imprisonment
+2663	Inner Strength
+2664	Brightwinged Fury
+2665	Heart and Soul
+2666	Gift of the Land
+2667	Gatherer's Bounty
+2668	Collector's Focus
+2669	Klymenos
+2670	Katabasis
+2671	Toad
+2672	Breathless
+2673	
+2674	Holy Sheltron
+2675	Knight's Resolve
+2676	Knight's Benediction
+2677	Surging Tempest
+2678	Bloodwhetting
+2679	Stem the Flow
+2680	Stem the Tide
+2681	Equilibrium
+2682	Oblation
+2683	Heart of Corundum
+2684	Clarity of Corundum
+2685	Catharsis of Corundum
+2686	Ready to Blast
+2687	Riddle of Wind
+2688	竜眼蒼穹実行可
+2689	Meisui
+2690	Raiju Ready
+2691	Fleeting Raiju Ready
+2692	Blast Arrow Ready
+2693	Silken Symmetry
+2694	Silken Flow
+2695	Improvisation
+2696	Rising Rhythm
+2697	Improvised Finish
+2698	Flourishing Finish
+2699	Fourfold Fan Dance
+2700	Flourishing Starfall
+2701	Further Ruin
+2702	Radiant Aegis
+2703	Searing Light
+2704	Rekindle
+2705	Undying Flame
+2706	Slipstream
+2707	Magick Barrier
+2708	Aquaveil
+2709	Liturgy of the Bell
+2710	Protraction
+2711	Desperate Measures
+2712	Expedience
+2713	Clarifying Draw
+2714	Harmony of Spirit
+2715	Harmony of Body
+2716	Harmony of Mind
+2717	Exaltation
+2718	Macrocosmos
+2719	Chaotic Spring
+2720	Power Surge
+2721	Blade of Valor
+2722	Radiant Finale
+2723	Phantom Kamaitachi Ready
+2724	Ifrit's Favor
+2725	Garuda's Favor
+2726	Anguish
+2727	Transfiguration
+2728	
+2729	Incorporeal
+2730	Endwalker
+2731	Aether Sickness
+2732	Quadruple
+2733	Discomposed
+2734	Epic Echo
+2735	Toxicosis
+2736	Requisitioned Magitek
+2737	Fading Consciousness
+2738	At Death's Door
+2739	Cold Spell
+2740	Hot Spell
+2741	Shackles of Time
+2742	Shackles of Companionship
+2743	Shackles of Loneliness
+2744	Inescapable Companionship
+2745	Inescapable Loneliness
+2746	Heart of Man
+2747	
+2748	Soul of Friendship
+2749	Soul of Devotion
+2750	Soulsow
+2751	Fire Alchemy
+2752	Ice Alchemy
+2753	Thunder Alchemy
+2754	Toxic Alchemy
+2755	High Jump Target
+2756	Spineshatter Dive Target
+2757	Elusive Jump Target
+2758	Spreading Flames
+2759	Entangled Flames
+2760	Borrowed Flesh
+2761	Darkened Fire
+2762	Death's Toll
+2763	Smiley Face
+2764	Frowny Face
+2765	Eureka Moment
+2766	
+2767	Mark of Easy Prey
+2768	Mark of the Tides
+2769	Mark of the Depths
+2770	Fore Mark of the Tides
+2771	Rear Mark of the Tides
+2772	Left Mark of the Tides
+2773	Right Mark of the Tides
+2774	Dropsy
+2775	Clawbound
+2776	Fangbound
+2777	Bound and Determined
+2778	Angler's Art
+2779	Makeshift Bait
+2780	Prize Catch
+2781	Unlimited
+2782	
+2783	Vital Sight
+2784	ホールドブレス
+2785	
+2786	Spark of Hope
+2787	Ploutonos
+2788	Eubuleus
+2789	True Bravery
+2790	True Step
+2791	True Benison
+2792	True Medica II
+2793	True Stoneskin
+2794	True Hallowed Ground
+2795	Circle of Clarity
+2796	True Sentinel
+2797	True Rampart
+2798	True Reprisal
+2799	Aethersucker
+2800	Casting Chlamys
+2801	Elemental Resistance Down
+2802	Role Call
+2803	Miscast
+2804	Thornpricked
+2805	Carrot of Happiness
+2806	Philosopher's Carrot
+2807	Lucky Carrot
+2808	Iron Carrot
+2809	Magic Damage Up
+2810	Chorus Aligned
+2811	反転プログラム
+2812	
+2813	
+2814	
+2815	
+2816	
+2817	Partygoer
+2818	Earth-aspected
+2819	Lightning-aspected
+2820	Wind-aspected
+2821	To the Dungeons
+2822	Wicked Whim
+2823	
+2824	Incapacitated
+2825	Deactivated
+2826	Creeping Poison
+2827	Irmin Hedge
+2828	Prayers of Hope
+2829	Last Vigil
+2830	Last Vigil
+2831	Shield of the Fury
+2832	Tenebrous Grasp
+2833	Thunderstruck
+2834	Neurolink
+2835	Forward Bearing
+2836	Backward Bearing
+2837	Leftward Bearing
+2838	Rightward Bearing
+2839	Suiton
+2840	Rightward Whimsy
+2841	Leftward Whimsy
+2842	Backward Whimsy
+2843	Iron Will
+2844	Somanoutic Barrier
+2845	Enhanced Harpe
+2846	Whispered Incantation
+2847	Whispers Manifest
+2848	Mirrored Incantation
+2849	
+2850	
+2851	In Event
+2852	HP Recovery Down
+2853	Titan's Favor
+2854	Soul Reaver
+2855	Enhanced Gibbet
+2856	Gallows Oiled
+2857	Enhanced Void Reaping
+2858	Ripe for Reaping
+2859	Enhanced Harpe
+2860	Threshold
+2861	Crest of Time Borrowed
+2862	Crest of Time Returned
+2863	Enshrouded
+2864	Eukrasian Dosis III
+2865	Eukrasian Diagnosis
+2866	Eukrasian Prognosis
+2867	Eukrasia
+2868	Pneuma
+2869	Haima
+2870	Haimatinon
+2871	Kardia
+2872	Kardion
+2873	Limit Breaker
+2874	Shackles of Time
+2875	Shackles of Time
+2876	Heros's Mantle
+2877	Magos's Mantle
+2878	Mousa's Mantle
+2879	Adamantinon Thelema
+2880	毒
+2881	
+2882	被物理ダメージ増加
+2883	スロウ
+2884	ＨＰ自然回復無効
+2885	Shackles of Companionship
+2886	Shackles of Companionship
+2887	Shackles of Companionship
+2888	Shackles of Loneliness
+2889	Shackles of Loneliness
+2890	Shackles of Loneliness
+2891	Spearfisher's Intuition
+2892	
+2893	Plagued
+2894	
+2895	Solemn Vow
+2896	Mortal Vow
+2897	Mortal Atonement
+2898	Boiling
+2899	Freezing
+2900	Sustained Dark Damage
+2901	Sustained Light Damage
+2902	Fire Resistance Down II
+2903	Ice Resistance Down II
+2904	Unforgotten
+2905	Revolutionary
+2906	●偽神獣の猛毒
+2907	Tizona's Bastion
+2908	Tizona's Bastion
+2909	Umbral Rays
+2910	Down for the Count
+2911	Damage Down
+2912	Vulnerability Up
+2913	Flesh Wound
+2914	Stab Wound
+2915	Concussion
+2916	Burns
+2917	Frostbite
+2918	Windburn
+2919	Sludge
+2920	Electrocution
+2921	Dropsy
+2922	Bleeding
+2923	Shackles of Companionship
+2924	Shackles of Loneliness
+2925	Acting DPS
+2926	Acting Healer
+2927	Acting Tank
+2928	Fountain of Fire
+2929	Trickle of Fire
+2930	
+2931	
+2932	Fleet-footed
+2933	In Event
+2934	●強制稼働
+2935	Sustained Damage
+2936	Temporary Misdirection
+2937	Fire Resistance Down II
+2938	Kerakeia
+2939	Prey
+2940	Physical Vulnerability Up
+2941	Magic Vulnerability Up
+2942	Flesh Wound
+2943	Stab Wound
+2944	Concussion
+2945	Burns
+2946	Frostbite
+2947	Windburn
+2948	Sludge
+2949	Electrocution
+2950	Dropsy
+2951	Bleeding
+2952	True Finish
+2953	Stun
+2954	Willful
+2955	Will to Live
+2956	精霊の加護
+2957	Swift Deception
+2958	Forward Whimsy
+2959	Ogi Namikiri Ready
+2960	Enhanced Flare
+2961	Down for the Count
+2962	Twisting Viper
+2963	Gnashing Wolf
+2964	Radiant Finale
+2965	Necrosis
+2966	Craven Companionship
+2967	Sustained Damage
+2968	Craniotomy
+2969	Sage's Wisdom
+2970	
+2971	HP Penalty
+2972	Bloodsown Circle
+2973	Spinning
+2974	Dizzy
+2975	Fetters
+2976	Doom
+2977	HP Recovery Down
+2978	HP Recovery Down
+2983	Sleep
+2984	
+2988	
+2989	Echoes of Nausea
+2990	Echoes of Befoulment
+2991	Echoes of the Future
+2992	Echoes of Benevolence
+2993	Grip of Despair
+2994	Hardcore
+2995	Blackfeather Boost
+2996	Swift Sprint
+2997	Swift Sprint
+2998	Lightning Resistance Down II
+2999	In Event
+3000	Toxicosis
+3001	Disciplined Fist
+3002	Shadowbite Ready
+3003	Holos
+3004	First in Line
+3005	Second in Line
+3006	Third in Line
+3007	Petrification
+3008	Unshakable Loyalty
+3009	Might of the Vortex
+3010	Might of Crags
+3011	Might of the Inferno
+3012	Vortex Barrier
+3013	Prayer of Light
+3014	Blessing of Light
+3015	On Balance
+3016	
+3017	Flourishing Symmetry
+3018	Flourishing Flow
+3019	Blade of Faith Ready
+3020	Souls in the Balance
+3021	Unguarded
+3022	Half-asleep
+3023	Hysteria
+3024	Seduced
+3025	Sacred Claim
+3026	Holy Sheltron
+3027	●ホーリー・シェルトロン：追撃
+3028	●コンフィテオル実行可
+3029	Onslaught
+3030	Bloodwhetting
+3031	Stem the Tide
+3032	●プライマルレンド実行可
+3033	Blackblood
+3034	Dark Arts
+3035	●プランジカット
+3036	Salted Earth
+3037	Salted Earth
+3038	Salt's Bane
+3039	Undead Redemption
+3040	●ブラッドウェポン
+3041	Ready to Blast
+3042	No Mercy
+3043	Powder Barrel
+3044	Junction Tank
+3045	Junction DPS
+3046	Junction Healer
+3047	Hypervelocity
+3048	Jugular Rip
+3049	Abdomen Tear
+3050	Eye Gouge
+3051	Nebula
+3052	Relentless Rush
+3053	Relentless Shrapnel
+3054	Guard
+3055	Contact Prohibition Ordained
+3056	Contact Regulation Ordained
+3057	Escape Prohibition Ordained
+3058	Escape Detection Ordained
+3059	Flesh Wound
+3060	Flesh Wound
+3061	Stab Wound
+3062	Stab Wound
+3063	Concussion
+3064	Concussion
+3065	Burns
+3066	Burns
+3067	Frostbite
+3068	Frostbite
+3069	Windburn
+3070	Windburn
+3071	Sludge
+3072	Sludge
+3073	Electrocution
+3074	Electrocution
+3075	Dropsy
+3076	Dropsy
+3077	Bleeding
+3078	Bleeding
+3079	Doton Corruption
+3080	Rhythmetic Fever
+3081	Toxicosis
+3082	Toxicosis
+3083	Cure III Ready
+3084	●女神の加護
+3085	Miracle of Nature
+3086	Aquaveil
+3087	Galvanize
+3088	Catalyze
+3089	Biolysis
+3090	Biolytic
+3091	Mummification
+3092	Expedience
+3093	Desperate Measures
+3094	Recitation
+3095	Summon Seraph
+3096	Seraph Flight
+3097	Seraphic Veil
+3098	Consolation
+3099	Diurnal Benefic
+3100	Nocturnal Benefic
+3101	Balance Drawn
+3102	Ewer Drawn
+3103	Spire Drawn
+3104	Macrocosmos
+3105	Celestial River
+3106	Celestial Tide
+3107	Eukrasia
+3108	Eukrasian Dosis III
+3109	Eukrasian Diagnosis
+3110	Haima
+3111	Haimatinon
+3112	●ゾーエ
+3113	Toxikon
+3114	●トキシコンII
+3115	Addersting
+3116	カルディア
+3117	カルディア[被]
+3118	Mesotes
+3119	Mesotes
+3120	Lype
+3121	Featherbrained
+3122	Devouring Dark
+3123	Blessing of Light
+3124	Defiance
+3125	Swift Sprint
+3126	第一の事象記録
+3127	第二の事象記録
+3128	第三の事象記録
+3129	Damage Up
+3130	Slashing Resistance Down
+3131	Piercing Resistance Down
+3132	Blunt Resistance Down
+3133	Suppuration
+3134	Bind
+3135	Light Resistance Down
+3136	Dark Resistance Down
+3137	Repertoire
+3138	Frontliner's March
+3139	Frontline March
+3140	Frontliner's Forte
+3141	Frontline Forte
+3142	Blast Arrow Ready
+3143	The Warden's Paean
+3144	Final Fantasia
+3145	Heroes' Fantasia
+3146	英雄のファンタジア［戦］
+3147	英雄のファンタジア［魔］
+3148	Heat
+3149	Overheated
+3150	Drill Primed
+3151	Bioblaster Primed
+3152	Air Anchor Primed
+3153	Chain Saw Primed
+3154	●回転のこぎり
+3155	Bishop Active
+3156	Aether Mortar
+3157	Mortared
+3158	Analysis
+3159	Bladecatcher
+3160	Flourishing Saber Dance
+3161	Starfall Dance
+3162	Honing Dance
+3163	Acclaim
+3164	Honing Ovation
+3165	Down for the Count
+3166	Damage Down
+3167	Heavy
+3168	Six-sided Star
+3169	Polyglot
+3170	Fire Resonance
+3171	Earth Resonance
+3172	Pressure Point
+3173	Thunderclap
+3174	Meteodrive
+3175	メテオドライヴ
+3176	Heavensent
+3177	Life of the Dragon
+3178	Firstminds' Focus
+3179	Horrid Roar
+3180	Sky High
+3181	Sky Shatter
+3182	●ぶんどる：自身
+3183	Mug
+3184	Goka Mekkyaku
+3185	Thrill of Battle
+3186	Huton
+3187	Doton
+3188	Knight's Resolve
+3189	Meisui
+3190	星遁天誅
+3191	Death Link
+3192	Unsealed Seiton Tenchu
+3193	Sealed Goka Mekkyaku
+3194	Sealed Hyosho Ranryu
+3195	Sealed Forked Raiju
+3196	Sealed Huton
+3197	Sealed Doton
+3198	Sealed Meisui
+3199	Ogi Namikiri
+3200	Kaeshi: Namikiri
+3201	Kaiten
+3202	Kuzushi
+3203	Midare
+3204	Immortal Sacrifice
+3205	Plentiful Harvest
+3206	Death Warrant
+3207	Hell's Ingress
+3208	The Unforgotten
+3209	Elusive Jump
+3210	Phalanx
+3211	Fleeting Raiju Ready
+3213	Astral Fire II
+3215	Umbral Ice II
+3216	Astral Warmth
+3217	Umbral Freeze
+3218	Burns
+3219	Deep Freeze
+3220	Apocatastasis
+3221	Burst
+3222	Soul Resonance
+3223	●パラドックスシンボル
+3224	Radiant Aegis
+3225	Slipstream
+3226	Slipstream
+3227	Slipping
+3228	Dreadwyrm Trance
+3229	Firebird Trance
+3230	Everlasting Flight
+3231	Scarlet Flame
+3232	Revelation
+3233	Vermilion Radiance
+3234	Enchanted Riposte
+3235	Enchanted Zwerchhau
+3236	Enchanted Redoublement
+3237	Enchanted Riposte
+3238	Enchanted Zwerchhau
+3239	Enchanted Redoublement
+3240	Magick Barrier
+3241	Frazzle
+3242	Monomachy
+3243	Manafication
+3244	●デプラスマン実行可
+3245	White Shift
+3246	Black Shift
+3247	●ポーション
+3248	Resilience
+3249	Fetters
+3250	Blade of Faith Ready
+3251	
+3252	ナルザルの天秤：死
+3253	ナルザルの天秤：生
+3254	Trick Attack
+3255	Undead Rebirth
+3256	Orogeny
+3257	Berserk
+3258	Lance Charge
+3259	Life Surge
+3260	Damage Up
+3261	Concentrated Poison
+3262	Liftoff
+3265	Blood of the Dragon
+3266	Burns
+3267	Burns
+3268	First Brand
+3269	Second Brand
+3270	Third Brand
+3271	Fourth Brand
+3272	First Flame
+3273	Second Flame
+3274	Third Flame
+3275	Fourth Flame
+3276	Call of the Portal
+3277	Rite of Passage
+3278	Forbidden Passage
+3279	Forbidden Passage
+3280	Blessing of Blight
+3281	Warding Scale
+3282	Brain Rot
+3283	Fetters
+3284	Tangled
+3285	Awareness
+3286	Frozen
+3287	Deep Freeze
+3290	Echo of the Fallen
+3291	Scream of the Fallen
+3292	Lingering Echoes
+3293	Thunderous Echo
+3294	Chains of Resentment
+3295	Gilded Fate
+3296	Silvered Fate
+3297	Bracing Suds
+3298	Chilling Suds
+3299	Fizzling Suds
+3300	Medica II of the Seventh Dawn
+3301	Excellence
+3302	Warding Scale
+3303	Supernal Guard
+3305	Bracing Suds
+3306	Chilling Suds
+3307	Fizzling Suds
+3308	Inviolate Winds
+3309	Holy Bonds
+3310	Purgatory Winds
+3311	Holy Purgation
+3313	Aetherial Exchange
+3314	Glossomorph
+3315	Chelomorph
+3316	Out of Control
+3317	Consumption
+3318	Bodily Manipulation
+3319	Glossal Resistance Down
+3320	Chelic Resistance Down
+3321	Aetheronecrosis
+3322	Glossomorph
+3323	Dark Resistance Down II
+3324	Fetters
+3325	Conceptual Mastery
+3326	Blood of the Gorgon
+3327	Breath of the Gorgon
+3330	Imperfection: Alpha
+3331	Imperfection: Beta
+3332	Imperfection: Gamma
+3333	Perfection: Alpha
+3334	Perfection: Beta
+3335	Perfection: Gamma
+3336	Inconceivable
+3337	Winged Conception
+3338	Aquatic Conception
+3339	Shocking Conception
+3340	Fiery Conception
+3341	Toxic Conception
+3342	Growing Conception
+3343	Immortal Spark
+3344	Immortal Conception
+3345	Solosplice
+3346	Multisplice
+3347	Supersplice
+3348	Targeting
+3349	Inverse Magicks
+3350	Soul Stranded
+3351	Eye of the Gorgon
+3352	Crown of the Gorgon
+3353	
+3354	
+3355	
+3356	
+3357	
+3358	Enmity Up
+3359	Sustained Damage
+3360	Vulnerability Down
+3361	Vulnerability Up
+3362	Out of Control
+3364	Doom
+3365	Holosakos
+3367	Rehabilitation
+3368	Sewer-dweller
+3369	
+3370	
+3371	
+3372	Earth Resistance Down II
+3373	
+3374	
+3375	
+3376	
+3377	
+3378	
+3379	
+3380	Resurrection Restricted
+3381	Astral Fire III
+3382	Umbral Ice III
+3390	Poison
+3391	Purgatory Winds
+3392	Purgatory Winds
+3393	Purgatory Winds
+3394	Holy Purgation
+3395	Holy Purgation
+3396	Holy Purgation
+3397	Inviolate Winds
+3398	Holy Bonds
+3399	Poison
+3400	Glossomorph
+3401	HP Penalty
+3402	The Arrow
+3403	Bole Drawn
+3404	Arrow Drawn
+3405	Damage Barrier
+3406	Everburn
+3407	Toxicosis
+3408	Stun
+3409	
+3412	Natural Alignment
+3413	Bravery of the Seventh Dawn
+3414	Magic Vulnerability Up
+3415	Physical Vulnerability Up
+3457	Bind
