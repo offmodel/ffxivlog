@@ -130,6 +130,24 @@ namespace viewer
             DataGrid.ItemsSource = Data.Where(Filter);
         }
 
+        private void Director()
+        {
+            Filter = e => e is Director;
+
+            DataGrid.Columns.Clear();
+            DetailGrid.Columns.Clear();
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "EventType", Binding = new Binding("EventId") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Time", Binding = new Binding("EventTime") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "ContentType", Binding = new Binding("ContentTypeName") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Content", Binding = new Binding("Content") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Command", Binding = new Binding("CommandName") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Param1", Binding = new Binding("Param1") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Param2", Binding = new Binding("Param2") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Param3", Binding = new Binding("Param3") });
+            DataGrid.Columns.Add(new DataGridTextColumn() { Header = "Param4", Binding = new Binding("Param4") });
+            DataGrid.ItemsSource = Data.Where(Filter);
+        }
+
         private void EventType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             object tag = ((ComboBoxItem) EventType.SelectedItem).Tag;
@@ -153,6 +171,10 @@ namespace viewer
 
                 case 5:
                     ActorBuffs();
+                    break;
+
+                case 6:
+                    Director();
                     break;
             }
         }

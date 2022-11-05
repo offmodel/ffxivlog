@@ -76,26 +76,27 @@ namespace Offmodel.FFXIV.Log.Model
 
         public uint MPMax { get; }
 
+        public bool IsRemove { get; }
+
         public Actor(LogLine line, State state): base(line)
         {
             Id = uint.Parse(line.Text(2), NumberStyles.HexNumber);
             Name = line.Text(3);
+            IsRemove = false;
+            uint ownerId;
 
             switch (EventId)
             {
                 case 2:
-                    Id = uint.Parse(line.Text(2), NumberStyles.HexNumber);
-                    Name = line.Text(3);
                     state.PlayerId = Id;
+                    state.Actors.AddActor(this);
                     break;
 
                 case 3:
-                    Id = uint.Parse(line.Text(2), NumberStyles.HexNumber);
-                    Name = line.Text(3);
                     Job = (ActorJob)uint.Parse(line.Text(4), NumberStyles.HexNumber);
                     Level = uint.Parse(line.Text(5), NumberStyles.HexNumber);
 
-                    uint ownerId = uint.Parse(line.Text(6), NumberStyles.HexNumber);
+                    ownerId = uint.Parse(line.Text(6), NumberStyles.HexNumber);
                     if (ownerId != 0)
                     {
                         Owner = state.Actors.GetActor(ownerId);
@@ -118,10 +119,32 @@ namespace Offmodel.FFXIV.Log.Model
                     // TP/TPMax?
 
                     Position = new Position(line, 17);
+                    state.Actors.AddActor(this);
+                    break;
+
+                case 4:
+                    IsRemove = true;
+                    Job = (ActorJob)uint.Parse(line.Text(4), NumberStyles.HexNumber);
+                    Level = uint.Parse(line.Text(5), NumberStyles.HexNumber);
+
+                    ownerId = uint.Parse(line.Text(6), NumberStyles.HexNumber);
+                    if (ownerId != 0)
+                    {
+                        Owner = state.Actors.GetActor(ownerId);
+                    }
+                    else
+                    {
+                        Owner = null;
+                    }
+
+                    // ignoring world id
+                    World = line.Text(8);
+
+                    NPCNameId = uint.Parse(line.Text(9));
+                    NPCBaseId = uint.Parse(line.Text(10));
+                    state.Actors.RemoveActor(this);
                     break;
             }
-
-            state.Actors.AddActor(this);
         }
     }
 }

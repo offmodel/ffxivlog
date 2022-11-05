@@ -21,6 +21,7 @@ namespace Offmodel.FFXIV.Log.Model
             {
                 case 2:
                 case 3:
+                case 4:
                     return new Actor(logLine, state);
 
                 case 21:
@@ -30,6 +31,9 @@ namespace Offmodel.FFXIV.Log.Model
                 case 26:
                 case 30:
                     return new BuffUpdate(logLine, state);
+
+                case 33:
+                    return new Director(logLine);
 
                 case 37:
                     return new ActionSync(logLine, state);

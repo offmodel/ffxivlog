@@ -16,7 +16,7 @@
         * 34: Warrior Beast
         */
 
-    enum Gauge : uint
+    public enum Gauge : uint
     {
         BlackMageIncrement = 0x2D,
         BlackMageSwitch = 0x35,

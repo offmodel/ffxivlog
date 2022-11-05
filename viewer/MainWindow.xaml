@@ -14,6 +14,7 @@
             <ComboBoxItem Content="Actions" Tag="3"/>
             <ComboBoxItem Content="Buff Changes" Tag="4"/>
             <ComboBoxItem Content="Actor Buffs" Tag="5"/>
+            <ComboBoxItem Content="Director" Tag="6"/>
         </ComboBox>
         <Grid Margin="0,51,0,0">
             <Grid.ColumnDefinitions>
